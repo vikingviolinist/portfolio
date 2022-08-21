@@ -6,21 +6,10 @@
   import { technologies } from './technologies';
   import ThemeToggle from './lib/ThemeToggle.svelte';
   import NavBar from './lib/NavBar.svelte';
-
-  if (
-    localStorage.theme === 'dark' ||
-    (!('prefersDarkTheme' in localStorage) &&
-      window.matchMedia('(prefers-color-scheme: dark)').matches)
-  ) {
-    document.documentElement.classList.add('dark');
-  } else {
-    document.documentElement.classList.remove('dark');
-  }
-  console.log(localStorage.getItem('prefersDarkTheme'));
 </script>
 
 <header
-  class="section sec1 header active min-h-screen bg-secondary dark:bg-primary text-white overflow-hidden"
+  class="section sec1 header active duration-500 min-h-screen bg-secondary dark:bg-primary text-white overflow-hidden"
   id="home"
 >
   <div class="header-content grid grid-cols-[800px,1fr] min-h-screen">
@@ -34,11 +23,9 @@
         <div
           class="lines lines-left flex flex-col gap-[6.5rem] absolute left-[20%] w-full"
         >
-          <img src="src/assets/line-left.svg" alt="Line" />
-          <img src="src/assets/line-left.svg" alt="Line" />
-          <img src="src/assets/line-left.svg" alt="Line" />
-          <img src="src/assets/line-left.svg" alt="Line" />
-          <img src="src/assets/line-left.svg" alt="Line" />
+          {#each Array(5) as _, index (index)}
+            <img src="./images/line-left.svg" alt="Line" />
+          {/each}
         </div>
       </div>
       <div
@@ -56,11 +43,9 @@
         <div
           class="lines lines-right flex flex-col gap-[6.5rem] absolute w-full left-[40%]"
         >
-          <img src="src/assets/line-right.svg" alt="Line" />
-          <img src="src/assets/line-right.svg" alt="Line" />
-          <img src="src/assets/line-right.svg" alt="Line" />
-          <img src="src/assets/line-right.svg" alt="Line" />
-          <img src="src/assets/line-right.svg" alt="Line" />
+          {#each Array(5) as _, index (index)}
+            <img src="./images/line-right.svg" alt="Line" />
+          {/each}
         </div>
       </div>
     </div>
@@ -85,14 +70,16 @@
           </p>
           <div class="btn-container inline-block">
             <a
-              href=""
-              class="main-btn relative rounded-[30px] font-semibold border border-primary flex items-center overflow-hidden
+              href="https://github.com/vikingviolinist"
+              class="main-btn relative rounded-[30px] font-semibold border border-primary dark:border-secondary flex items-center overflow-hidden
               before:absolute before:w-full before:h-full before:translate-x-[100%]
               "
             >
-              <span class="btn-text px-8 text-primary">Download CV</span>
+              <span class="btn-text px-8 text-primary dark:text-secondary"
+                >Download CV</span
+              >
               <span
-                class="btn-icon p-4 bg-primary flex items-center justify-center rounded-[50%]"
+                class="btn-icon p-4 bg-primary dark:bg-secondary flex items-center justify-center rounded-[50%]"
                 ><i class="fas fa-download" /></span
               >
             </a>
@@ -257,15 +244,23 @@
     <div class="portfolios">
       <div class="portfolio-item">
         <div class="image">
-          <img src="src/assets/port1.jpeg" alt="Project 1" />
+          <img src="./images/port1.jpeg" alt="Project 1" />
         </div>
         <div class="hover-items">
           <h3>Project Source</h3>
           <div class="icons">
-            <a class="icon" target="_blank">
+            <a
+              class="icon"
+              href="https://github.com/vikingviolinist"
+              target="_blank"
+            >
               <i class="fab fa-github" />
             </a>
-            <a class="icon" target="_blank">
+            <a
+              class="icon"
+              href="https://github.com/vikingviolinist"
+              target="_blank"
+            >
               <i class="fab fa-youtube" />
             </a>
           </div>
@@ -273,15 +268,23 @@
       </div>
       <div class="portfolio-item">
         <div class="image">
-          <img src="src/assets/port2.jpeg" alt="Project 1" />
+          <img src="./images/port2.jpeg" alt="Project 1" />
         </div>
         <div class="hover-items">
           <h3>Project Source</h3>
           <div class="icons">
-            <a class="icon" target="_blank">
+            <a
+              class="icon"
+              href="https://github.com/vikingviolinist"
+              target="_blank"
+            >
               <i class="fab fa-github" />
             </a>
-            <a class="icon" target="_blank">
+            <a
+              class="icon"
+              href="https://github.com/vikingviolinist"
+              target="_blank"
+            >
               <i class="fab fa-youtube" />
             </a>
           </div>
@@ -289,15 +292,23 @@
       </div>
       <div class="portfolio-item">
         <div class="image">
-          <img src="src/assets/port3.jpeg" alt="Project 1" />
+          <img src="./images/port3.jpeg" alt="Project 1" />
         </div>
         <div class="hover-items">
           <h3>Project Source</h3>
           <div class="icons">
-            <a class="icon" target="_blank">
+            <a
+              class="icon"
+              href="https://github.com/vikingviolinist"
+              target="_blank"
+            >
               <i class="fab fa-github" />
             </a>
-            <a class="icon" target="_blank">
+            <a
+              class="icon"
+              href="https://github.com/vikingviolinist"
+              target="_blank"
+            >
               <i class="fab fa-youtube" />
             </a>
           </div>
@@ -305,15 +316,23 @@
       </div>
       <div class="portfolio-item">
         <div class="image">
-          <img src="src/assets/port5.jpeg" alt="Project 1" />
+          <img src="./images/port5.jpeg" alt="Project 1" />
         </div>
         <div class="hover-items">
           <h3>Project Source</h3>
           <div class="icons">
-            <a class="icon" target="_blank">
+            <a
+              class="icon"
+              href="https://github.com/vikingviolinist"
+              target="_blank"
+            >
               <i class="fab fa-github" />
             </a>
-            <a class="icon" target="_blank">
+            <a
+              class="icon"
+              href="https://github.com/vikingviolinist"
+              target="_blank"
+            >
               <i class="fab fa-youtube" />
             </a>
           </div>
@@ -321,15 +340,23 @@
       </div>
       <div class="portfolio-item">
         <div class="image">
-          <img src="src/assets/port6.jpeg" alt="Project 1" />
+          <img src="./images/port6.jpeg" alt="Project 1" />
         </div>
         <div class="hover-items">
           <h3>Project Source</h3>
           <div class="icons">
-            <a class="icon" target="_blank">
+            <a
+              class="icon"
+              href="https://github.com/vikingviolinist"
+              target="_blank"
+            >
               <i class="fab fa-github" />
             </a>
-            <a class="icon" target="_blank">
+            <a
+              class="icon"
+              href="https://github.com/vikingviolinist"
+              target="_blank"
+            >
               <i class="fab fa-youtube" />
             </a>
           </div>
@@ -337,15 +364,23 @@
       </div>
       <div class="portfolio-item">
         <div class="image">
-          <img src="src/assets/port7.jpeg" alt="Project 1" />
+          <img src="./images/port7.jpeg" alt="Project 1" />
         </div>
         <div class="hover-items">
           <h3>Project Source</h3>
           <div class="icons">
-            <a class="icon" target="_blank">
+            <a
+              class="icon"
+              href="https://github.com/vikingviolinist"
+              target="_blank"
+            >
               <i class="fab fa-github" />
             </a>
-            <a class="icon" target="_blank">
+            <a
+              class="icon"
+              href="https://github.com/vikingviolinist"
+              target="_blank"
+            >
               <i class="fab fa-youtube" />
             </a>
           </div>
@@ -390,14 +425,15 @@
           </div>
           <div class="contact-icons">
             <div class="contact-icon">
-              <a target="_blank">
+              <a href="https://github.com/vikingviolinist" target="_blank">
                 <i class="fab fa-facebook" />
-              </a><a target="_blank">
+              </a><a href="https://github.com/vikingviolinist" target="_blank">
                 <i class="fab fa-twitter" />
               </a>
-              <a target="_blank"> <i class="fab fa-github" /> </a><a
-                target="_blank"
-              >
+              <a href="https://github.com/vikingviolinist" target="_blank">
+                <i class="fab fa-github" />
+              </a>
+              <a href="https://github.com/vikingviolinist" target="_blank">
                 <i class="fab fa-youtube" />
               </a>
             </div>
@@ -457,6 +493,12 @@
       transition: all 1s ease-in-out;
     }
   }
+  /* 
+  @layer components {
+    .section {
+      @apply;
+    }
+  } */
 
   @layer utilities {
     .clip-path-left {
