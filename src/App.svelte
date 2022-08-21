@@ -258,10 +258,18 @@
         <div class="hover-items">
           <h3>Project Source</h3>
           <div class="icons">
-            <a class="icon" target="_blank">
+            <a
+              class="icon"
+              href="https://github.com/vikingviolinist"
+              target="_blank"
+            >
               <i class="fab fa-github" />
             </a>
-            <a class="icon" target="_blank">
+            <a
+              class="icon"
+              href="https://github.com/vikingviolinist"
+              target="_blank"
+            >
               <i class="fab fa-youtube" />
             </a>
           </div>
@@ -274,10 +282,18 @@
         <div class="hover-items">
           <h3>Project Source</h3>
           <div class="icons">
-            <a class="icon" target="_blank">
+            <a
+              class="icon"
+              href="https://github.com/vikingviolinist"
+              target="_blank"
+            >
               <i class="fab fa-github" />
             </a>
-            <a class="icon" target="_blank">
+            <a
+              class="icon"
+              href="https://github.com/vikingviolinist"
+              target="_blank"
+            >
               <i class="fab fa-youtube" />
             </a>
           </div>
@@ -290,10 +306,18 @@
         <div class="hover-items">
           <h3>Project Source</h3>
           <div class="icons">
-            <a class="icon" target="_blank">
+            <a
+              class="icon"
+              href="https://github.com/vikingviolinist"
+              target="_blank"
+            >
               <i class="fab fa-github" />
             </a>
-            <a class="icon" target="_blank">
+            <a
+              class="icon"
+              href="https://github.com/vikingviolinist"
+              target="_blank"
+            >
               <i class="fab fa-youtube" />
             </a>
           </div>
@@ -306,10 +330,18 @@
         <div class="hover-items">
           <h3>Project Source</h3>
           <div class="icons">
-            <a class="icon" target="_blank">
+            <a
+              class="icon"
+              href="https://github.com/vikingviolinist"
+              target="_blank"
+            >
               <i class="fab fa-github" />
             </a>
-            <a class="icon" target="_blank">
+            <a
+              class="icon"
+              href="https://github.com/vikingviolinist"
+              target="_blank"
+            >
               <i class="fab fa-youtube" />
             </a>
           </div>
@@ -322,10 +354,18 @@
         <div class="hover-items">
           <h3>Project Source</h3>
           <div class="icons">
-            <a class="icon" target="_blank">
+            <a
+              class="icon"
+              href="https://github.com/vikingviolinist"
+              target="_blank"
+            >
               <i class="fab fa-github" />
             </a>
-            <a class="icon" target="_blank">
+            <a
+              class="icon"
+              href="https://github.com/vikingviolinist"
+              target="_blank"
+            >
               <i class="fab fa-youtube" />
             </a>
           </div>
@@ -338,10 +378,18 @@
         <div class="hover-items">
           <h3>Project Source</h3>
           <div class="icons">
-            <a class="icon" target="_blank">
+            <a
+              class="icon"
+              href="https://github.com/vikingviolinist"
+              target="_blank"
+            >
               <i class="fab fa-github" />
             </a>
-            <a class="icon" target="_blank">
+            <a
+              class="icon"
+              href="https://github.com/vikingviolinist"
+              target="_blank"
+            >
               <i class="fab fa-youtube" />
             </a>
           </div>
@@ -386,14 +434,15 @@
           </div>
           <div class="contact-icons">
             <div class="contact-icon">
-              <a target="_blank">
+              <a href="https://github.com/vikingviolinist" target="_blank">
                 <i class="fab fa-facebook" />
-              </a><a target="_blank">
+              </a><a href="https://github.com/vikingviolinist" target="_blank">
                 <i class="fab fa-twitter" />
               </a>
-              <a target="_blank"> <i class="fab fa-github" /> </a><a
-                target="_blank"
-              >
+              <a href="https://github.com/vikingviolinist" target="_blank">
+                <i class="fab fa-github" />
+              </a>
+              <a href="https://github.com/vikingviolinist" target="_blank">
                 <i class="fab fa-youtube" />
               </a>
             </div>
