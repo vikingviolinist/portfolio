@@ -81,7 +81,7 @@
           </p>
           <div class="btn-container inline-block">
             <a
-              href=""
+              href="https://github.com/vikingviolinist"
               class="main-btn relative rounded-[30px] font-semibold border border-primary flex items-center overflow-hidden
               before:absolute before:w-full before:h-full before:translate-x-[100%]
               "
