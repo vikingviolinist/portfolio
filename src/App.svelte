@@ -90,7 +90,7 @@
   </div>
 </header>
 <main>
-  <section class="section sec2" id="experience">
+  <section class="section sec2 hidden" id="experience">
     <div class="main-title">
       <h2>
         My <span>experience</span><span class="bg-text">my experience</span>
@@ -167,7 +167,7 @@
     </div>
   </section>
 
-  <section class="section sec3" id="education">
+  <section class="section sec3 hidden" id="education">
     <div class="main-title">
       <h2>
         My <span>education</span><span class="bg-text">my education</span>
@@ -226,7 +226,7 @@
     </div>
   </section>
 
-  <section class="section sec3" id="portfolio">
+  <section class="section sec4 hidden" id="portfolio">
     <div class="main-title">
       <h2>
         My <span>Portfolio</span><span class="bg-text">my portfolio</span>
@@ -389,7 +389,7 @@
     </div>
   </section>
 
-  <section class="section sec5 contact" id="contact">
+  <section class="section sec5 hidden contact" id="contact">
     <div class="contact-container">
       <div class="main-title">
         <h2>
