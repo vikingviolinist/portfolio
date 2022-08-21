@@ -6,21 +6,10 @@
   import { technologies } from './technologies';
   import ThemeToggle from './lib/ThemeToggle.svelte';
   import NavBar from './lib/NavBar.svelte';
-
-  if (
-    localStorage.theme === 'dark' ||
-    (!('prefersDarkTheme' in localStorage) &&
-      window.matchMedia('(prefers-color-scheme: dark)').matches)
-  ) {
-    document.documentElement.classList.add('dark');
-  } else {
-    document.documentElement.classList.remove('dark');
-  }
-  console.log(localStorage.getItem('prefersDarkTheme'));
 </script>
 
 <header
-  class="section sec1 header active min-h-screen bg-secondary dark:bg-primary text-white overflow-hidden"
+  class="section sec1 header active duration-500 min-h-screen bg-secondary dark:bg-primary text-white overflow-hidden"
   id="home"
 >
   <div class="header-content grid grid-cols-[800px,1fr] min-h-screen">
@@ -82,13 +71,15 @@
           <div class="btn-container inline-block">
             <a
               href="https://github.com/vikingviolinist"
-              class="main-btn relative rounded-[30px] font-semibold border border-primary flex items-center overflow-hidden
+              class="main-btn relative rounded-[30px] font-semibold border border-primary dark:border-secondary flex items-center overflow-hidden
               before:absolute before:w-full before:h-full before:translate-x-[100%]
               "
             >
-              <span class="btn-text px-8 text-primary">Download CV</span>
+              <span class="btn-text px-8 text-primary dark:text-secondary"
+                >Download CV</span
+              >
               <span
-                class="btn-icon p-4 bg-primary flex items-center justify-center rounded-[50%]"
+                class="btn-icon p-4 bg-primary dark:bg-secondary flex items-center justify-center rounded-[50%]"
                 ><i class="fas fa-download" /></span
               >
             </a>
@@ -502,6 +493,12 @@
       transition: all 1s ease-in-out;
     }
   }
+  /* 
+  @layer components {
+    .section {
+      @apply;
+    }
+  } */
 
   @layer utilities {
     .clip-path-left {
