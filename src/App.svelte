@@ -34,11 +34,9 @@
         <div
           class="lines lines-left flex flex-col gap-[6.5rem] absolute left-[20%] w-full"
         >
-          <img src="src/assets/line-left.svg" alt="Line" />
-          <img src="src/assets/line-left.svg" alt="Line" />
-          <img src="src/assets/line-left.svg" alt="Line" />
-          <img src="src/assets/line-left.svg" alt="Line" />
-          <img src="src/assets/line-left.svg" alt="Line" />
+          {#each Array(5) as _, index (index)}
+            <img src="./images/line-left.svg" alt="Line" />
+          {/each}
         </div>
       </div>
       <div
@@ -56,11 +54,9 @@
         <div
           class="lines lines-right flex flex-col gap-[6.5rem] absolute w-full left-[40%]"
         >
-          <img src="src/assets/line-right.svg" alt="Line" />
-          <img src="src/assets/line-right.svg" alt="Line" />
-          <img src="src/assets/line-right.svg" alt="Line" />
-          <img src="src/assets/line-right.svg" alt="Line" />
-          <img src="src/assets/line-right.svg" alt="Line" />
+          {#each Array(5) as _, index (index)}
+            <img src="./images/line-right.svg" alt="Line" />
+          {/each}
         </div>
       </div>
     </div>
@@ -257,7 +253,7 @@
     <div class="portfolios">
       <div class="portfolio-item">
         <div class="image">
-          <img src="src/assets/port1.jpeg" alt="Project 1" />
+          <img src="./images/port1.jpeg" alt="Project 1" />
         </div>
         <div class="hover-items">
           <h3>Project Source</h3>
@@ -273,7 +269,7 @@
       </div>
       <div class="portfolio-item">
         <div class="image">
-          <img src="src/assets/port2.jpeg" alt="Project 1" />
+          <img src="./images/port2.jpeg" alt="Project 1" />
         </div>
         <div class="hover-items">
           <h3>Project Source</h3>
@@ -289,7 +285,7 @@
       </div>
       <div class="portfolio-item">
         <div class="image">
-          <img src="src/assets/port3.jpeg" alt="Project 1" />
+          <img src="./images/port3.jpeg" alt="Project 1" />
         </div>
         <div class="hover-items">
           <h3>Project Source</h3>
@@ -305,7 +301,7 @@
       </div>
       <div class="portfolio-item">
         <div class="image">
-          <img src="src/assets/port5.jpeg" alt="Project 1" />
+          <img src="./images/port5.jpeg" alt="Project 1" />
         </div>
         <div class="hover-items">
           <h3>Project Source</h3>
@@ -321,7 +317,7 @@
       </div>
       <div class="portfolio-item">
         <div class="image">
-          <img src="src/assets/port6.jpeg" alt="Project 1" />
+          <img src="./images/port6.jpeg" alt="Project 1" />
         </div>
         <div class="hover-items">
           <h3>Project Source</h3>
@@ -337,7 +333,7 @@
       </div>
       <div class="portfolio-item">
         <div class="image">
-          <img src="src/assets/port7.jpeg" alt="Project 1" />
+          <img src="./images/port7.jpeg" alt="Project 1" />
         </div>
         <div class="hover-items">
           <h3>Project Source</h3>
