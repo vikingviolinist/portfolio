@@ -13,7 +13,7 @@
 >
   <i
     class="fas fa-{icon} text-xl pointer-events-none group-hover:text-white
-        {active ? 'text-white' : 'text-gray-3 dark:text-gray-400'}"
+        {active ? 'text-white' : 'text-gray-2 dark:text-gray-400'}"
   />
   <span
     class="absolute w-auto p-2 m-2 -translate-y-2  min-w-max right-16 rounded-md shadow-md

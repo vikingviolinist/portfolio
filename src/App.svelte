@@ -2,6 +2,8 @@
   import DevIcon from './lib/DevIcon.svelte';
   import Clef from './lib/Clef.svelte';
   import ClefCircuitBoard from './lib/ClefCircuitBoard.svelte';
+  import LineLeft from './lib/LineLeft.svelte';
+  import LineRight from './lib/LineRight.svelte';
 
   import { technologies } from './technologies';
   import ThemeToggle from './lib/ThemeToggle.svelte';
@@ -24,10 +26,7 @@
           class="lines lines-left flex flex-col gap-[6.5rem] absolute left-[20%] w-full"
         >
           {#each Array(5) as _, index (index)}
-            <div
-              class="h-3"
-              style="background-image: url('./images/line-left.svg')"
-            />
+            <LineLeft />
           {/each}
         </div>
       </div>
@@ -47,10 +46,7 @@
           class="lines lines-right flex flex-col gap-[6.5rem] absolute w-full left-[40%]"
         >
           {#each Array(5) as _, index (index)}
-            <div
-              class="h-3"
-              style="background-image: url('./images/line-right.svg'); background-size: contain;"
-            />
+            <LineRight />
           {/each}
         </div>
       </div>
