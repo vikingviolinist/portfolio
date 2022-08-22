@@ -1,4 +1,4 @@
-<div class="h-3 w-full">
+<div class="h-1 lg:h-3">
   <svg
     version="1.1"
     id="svg1204"
