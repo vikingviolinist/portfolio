@@ -58,7 +58,7 @@
         <div
           class="empty w-[200px] h-[400px] float-left clip-path-text shape-outside hidden lg:inline"
         />
-        <div class="relative">
+        <div class="relative lg:-left-10">
           <h1 class="name text-3xl lg:text-5xl font-bold">
             Hi, I'm <span class="text-primary dark:text-secondary">Lorem</span> Dolor
             sit amet consectetur
@@ -77,13 +77,13 @@
           >
             <a
               href="https://github.com/vikingviolinist"
-              class="main-btn relative rounded-[30px] font-semibold border border-primary dark:border-secondary flex items-center overflow-hidden
-              before:absolute before:w-full before:h-full before:translate-x-[100%]
-              "
+              class="main-btn z-0 relative rounded-[30px] font-semibold border border-primary dark:border-secondary flex items-center overflow-hidden
+              before:absolute before:-z-[1] before:w-full before:h-full before:translate-x-full before:transition-all before:duration-500 before:ease-in-out
+              group hover:before:bg-primary dark:hover:before:bg-secondary hover:before:translate-x-0"
             >
               <span
-                class="btn-text px-3 lg:px-8 text-primary dark:text-secondary"
-                >Download CV</span
+                class="btn-text px-3 lg:px-8 text-primary dark:text-secondary group-hover:text-white
+                  transition-all">Download CV</span
               >
               <span
                 class="btn-icon p-2 lg:p-4 bg-primary dark:bg-secondary flex items-center justify-center rounded-[50%]"
