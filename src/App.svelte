@@ -24,7 +24,10 @@
           class="lines lines-left flex flex-col gap-[6.5rem] absolute left-[20%] w-full"
         >
           {#each Array(5) as _, index (index)}
-            <img src="./images/line-left.svg" alt="Line" />
+            <div
+              class="h-3"
+              style="background-image: url('./images/line-left.svg')"
+            />
           {/each}
         </div>
       </div>
@@ -44,7 +47,10 @@
           class="lines lines-right flex flex-col gap-[6.5rem] absolute w-full left-[40%]"
         >
           {#each Array(5) as _, index (index)}
-            <img src="./images/line-right.svg" alt="Line" />
+            <div
+              class="h-3"
+              style="background-image: url('./images/line-right.svg'); background-size: contain;"
+            />
           {/each}
         </div>
       </div>
