@@ -14,14 +14,15 @@
 </script>
 
 <div
-  class="fixed top-[50%] right-8 flex flex-col items-center justify-center -translate-y-[50%] gap-5"
+  class="fixed left-[50%] lg:left-auto bottom-5 lg:top-[50%] lg:right-3 -translate-x-[50%]  lg:-translate-y-[50%] flex lg:flex-col items-center justify-center gap-3 lg:gap-5
+        transition-all duration-300 ease-in-out"
 >
   {#each icons as { icon, tooltip }}
     <NavBarButton
-      {icon}
-      {tooltip}
-      {toggleActive}
       active={icon === selectedIcon}
+      {toggleActive}
+      {tooltip}
+      {icon}
     />
   {/each}
 </div>

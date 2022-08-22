@@ -14,16 +14,16 @@
   class="section sec1 header active duration-500 min-h-screen bg-secondary dark:bg-primary text-white overflow-hidden"
   id="home"
 >
-  <div class="header-content grid grid-cols-[800px,1fr] min-h-screen">
-    <div class="left-header relative">
+  <div class="header-content grid lg:grid-cols-[800px,1fr] min-h-screen">
+    <div class="left-header relative w-[70%] lg:w-full">
       <div
-        class="left-header-left flex items-center justify-center h-full bg-primary dark:bg-secondary clip-path-left"
+        class="left-header-left py-2 transition-all duration-500 ease-in-out flex items-center justify-center h-full bg-primary dark:bg-secondary clip-path-left"
       >
-        <div class="g-clef g-clef-left w-[40%] z-[4] text-center">
+        <div class="g-clef g-clef-left w-[20%] lg:w-[40%] z-[4] text-center">
           <Clef toggle={false} />
         </div>
         <div
-          class="lines lines-left flex flex-col gap-[6.5rem] absolute left-[20%] w-full"
+          class="lines lines-left flex flex-col gap-4 lg:gap-[6.5rem] absolute left-[10%] lg:left-[20%] w-full"
         >
           {#each Array(5) as _, index (index)}
             <LineLeft />
@@ -33,17 +33,17 @@
       <div
         class="left-header-right absolute top-0 flex justify-center items-center w-full h-full clip-path-right"
       >
-        <div class="g-clef g-clef-right w-[40%] z-[3] text-center">
+        <div class="g-clef g-clef-right w-[20%] lg:w-[40%] z-[3] text-center">
           <ClefCircuitBoard />
         </div>
         <div
-          class="g-clef g-clef-right w-[40%] text-center g-clef-right-bg absolute z-[2]"
+          class="g-clef g-clef-right w-[20%] lg:w-[40%] text-center g-clef-right-bg absolute z-[2]"
         >
           <Clef toggle={true} />
         </div>
 
         <div
-          class="lines lines-right flex flex-col gap-[6.5rem] absolute w-full left-[40%]"
+          class="lines lines-right flex flex-col gap-4 lg:gap-[6.5rem] absolute w-full left-[40%]"
         >
           {#each Array(5) as _, index (index)}
             <LineRight />
@@ -51,17 +51,19 @@
         </div>
       </div>
     </div>
-    <div class="right-header pr-36 flex text-justify items-center">
+    <div
+      class="right-header p-4 lg:pr-36 flex text-justify items-start lg:items-center"
+    >
       <div>
         <div
-          class="empty w-[200px] h-[400px] float-left clip-path-text shape-outside"
+          class="empty w-[200px] h-[400px] float-left clip-path-text shape-outside hidden lg:inline"
         />
-        <div>
-          <h1 class="name text-5xl font-bold">
+        <div class="relative">
+          <h1 class="name text-3xl lg:text-5xl font-bold">
             Hi, I'm <span class="text-primary dark:text-secondary">Lorem</span> Dolor
             sit amet consectetur
           </h1>
-          <p class="my-10 text-lg">
+          <p class="my-4 lg:my-10 text-md lg:text-lg">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga,
             praesentium at. Iste inventore id architecto incidunt, pariatur
             placeat odit, dolores quaerat earum minus fugiat adipisci dolorum
@@ -70,18 +72,21 @@
             optio velit harum minima necessitatibus corrupti est! Illum quis
             eligendi nesciunt tenetur iure est sint, soluta incidunt?
           </p>
-          <div class="btn-container inline-block">
+          <div
+            class="btn-container inline-block absolute lg:relative right-0 -top-[15%]"
+          >
             <a
               href="https://github.com/vikingviolinist"
               class="main-btn relative rounded-[30px] font-semibold border border-primary dark:border-secondary flex items-center overflow-hidden
               before:absolute before:w-full before:h-full before:translate-x-[100%]
               "
             >
-              <span class="btn-text px-8 text-primary dark:text-secondary"
+              <span
+                class="btn-text px-3 lg:px-8 text-primary dark:text-secondary"
                 >Download CV</span
               >
               <span
-                class="btn-icon p-4 bg-primary dark:bg-secondary flex items-center justify-center rounded-[50%]"
+                class="btn-icon p-2 lg:p-4 bg-primary dark:bg-secondary flex items-center justify-center rounded-[50%]"
                 ><i class="fas fa-download" /></span
               >
             </a>
