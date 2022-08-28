@@ -11,6 +11,15 @@ module.exports = {
         'gray-4': '#454e56',
       },
     },
+    keyframes: {
+      scale: {
+        '0%': { transform: 'translateY(-100%) scaleY(0)' },
+        '100%': { transform: 'translateY(0) scaleY(1)' },
+      },
+    },
+    animation: {
+      scale: 'scale 1s ease-in-out',
+    },
   },
   plugins: [],
 };
