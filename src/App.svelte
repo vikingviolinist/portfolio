@@ -34,7 +34,11 @@
         class="left-header-right absolute top-0 flex justify-center items-center w-full h-full clip-path-right"
       >
         <div class="g-clef g-clef-right w-[20%] lg:w-[40%] z-[3] text-center">
-          <ClefCircuitBoard />
+          {#if window.screen.availWidth > 1024}
+            <ClefCircuitBoard />
+          {:else}
+            <Clef toggle={false} />
+          {/if}
         </div>
         <div
           class="g-clef g-clef-right w-[20%] lg:w-[40%] text-center g-clef-right-bg absolute z-[2]"
@@ -46,7 +50,11 @@
           class="lines lines-right flex flex-col gap-4 lg:gap-[6.5rem] absolute w-full left-[40%]"
         >
           {#each Array(5) as _, index (index)}
-            <LineRight />
+            {#if window.screen.availWidth > 1024}
+              <LineRight />
+            {:else}
+              <LineLeft />
+            {/if}
           {/each}
         </div>
       </div>
