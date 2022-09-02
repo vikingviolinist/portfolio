@@ -1,0 +1,124 @@
+<script lang="ts">
+  import Clef from '../lib/Clef.svelte';
+  import ClefCircuitBoard from '../lib/ClefCircuitBoard.svelte';
+  import LineLeft from '../lib/LineLeft.svelte';
+  import LineRight from '../lib/LineRight.svelte';
+
+  export let active: boolean;
+</script>
+
+<header
+  class="header duration-500 min-h-screen bg-secondary dark:bg-primary text-white overflow-hidden
+      transition-all duration-400 ease-in-out {active
+    ? 'animate-scale'
+    : 'hidden'}"
+>
+  <div class="header-content grid lg:grid-cols-[800px,1fr] min-h-screen">
+    <div class="left-header relative w-[70%] lg:w-full">
+      <div
+        class="left-header-left py-2 transition-all duration-500 ease-in-out flex items-center justify-center h-full bg-primary dark:bg-secondary clip-path-left"
+      >
+        <div class="g-clef g-clef-left w-[20%] lg:w-[40%] z-[4] text-center">
+          <Clef toggle={false} />
+        </div>
+        <div
+          class="lines lines-left flex flex-col gap-4 lg:gap-[6.5rem] absolute left-[10%] lg:left-[20%] w-full"
+        >
+          {#each Array(5) as _, index (index)}
+            <LineLeft />
+          {/each}
+        </div>
+      </div>
+      <div
+        class="left-header-right absolute top-0 flex justify-center items-center w-full h-full clip-path-right"
+      >
+        <div class="g-clef g-clef-right w-[20%] lg:w-[40%] z-[3] text-center">
+          {#if window.screen.availWidth > 1024}
+            <ClefCircuitBoard />
+          {:else}
+            <Clef toggle={false} />
+          {/if}
+        </div>
+        <div
+          class="g-clef g-clef-right w-[20%] lg:w-[40%] text-center g-clef-right-bg absolute z-[2]"
+        >
+          <Clef toggle={true} />
+        </div>
+
+        <div
+          class="lines lines-right flex flex-col gap-4 lg:gap-[6.5rem] absolute w-full left-[40%]"
+        >
+          {#each Array(5) as _, index (index)}
+            {#if window.screen.availWidth > 1024}
+              <LineRight />
+            {:else}
+              <LineLeft />
+            {/if}
+          {/each}
+        </div>
+      </div>
+    </div>
+    <div
+      class="right-header p-4 lg:pr-36 flex text-justify items-start lg:items-center"
+    >
+      <div>
+        <div
+          class="empty w-[200px] h-[400px] float-left clip-path-text shape-outside hidden lg:inline"
+        />
+        <div class="relative lg:-left-10">
+          <h1 class="name text-3xl lg:text-5xl font-bold">
+            Hi, I'm <span class="text-primary dark:text-secondary">Lorem</span> Dolor
+            sit amet consectetur
+          </h1>
+          <p class="my-4 lg:my-10 text-md lg:text-lg">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga,
+            praesentium at. Iste inventore id architecto incidunt, pariatur
+            placeat odit, dolores quaerat earum minus fugiat adipisci dolorum
+            consequuntur assumenda quis unde. Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Expedita, cumque alias eveniet quidem
+            optio velit harum minima necessitatibus corrupti est! Illum quis
+            eligendi nesciunt tenetur iure est sint, soluta incidunt?
+          </p>
+          <div
+            class="btn-container inline-block absolute lg:relative right-0 -top-[17%]"
+          >
+            <a
+              href="https://github.com/vikingviolinist"
+              class="main-btn z-0 relative rounded-[30px] font-semibold border border-primary dark:border-secondary flex items-center overflow-hidden
+              before:absolute before:-z-[1] before:w-full before:h-full before:translate-x-full before:transition-all before:duration-500 before:ease-in-out
+              group hover:before:bg-primary dark:hover:before:bg-secondary hover:before:translate-x-0"
+            >
+              <span
+                class="btn-text text-sm lg:text-lg px-4 lg:px-8 text-primary dark:text-secondary group-hover:text-white
+                  transition-all">Download CV</span
+              >
+              <span
+                class="btn-icon p-3 lg:p-4 bg-primary dark:bg-secondary flex items-center justify-center rounded-[50%]"
+                ><i class="fas fa-download" /></span
+              >
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<style>
+  @tailwind utilities;
+
+  @layer utilities {
+    .clip-path-left {
+      clip-path: polygon(0 0, 40% 0, 66% 100%, 0% 120%);
+    }
+    .clip-path-right {
+      clip-path: polygon(0 0, 40% 0, 66% 100%, 120% 0%);
+    }
+    .clip-path-text {
+      clip-path: polygon(0% 0%, 100% 0%, 0% 100%);
+    }
+    .shape-outside {
+      shape-outside: polygon(0% 0%, 100% 0%, 0% 100%);
+    }
+  }
+</style>
