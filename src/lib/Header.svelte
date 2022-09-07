@@ -71,6 +71,7 @@
               >Michal</span
             >, en utvikler med stor motivasjon og interesse for tech
           </h1>
+          <p class="my-4 text-center">🚧 Siden under utvikling 🚧</p>
           <p class="my-4 lg:my-10 text-md lg:text-lg">
             Jeg har jobbet som Frontend/Backend/DevOps utvikler hos
             tech-selskaper som lager digitale B2B løsninger. I mine roller har
