@@ -9,6 +9,7 @@ module.exports = {
         secondary: 'var(--color-secondary)',
         'gray-2': '#b2becd',
         'gray-4': '#454e56',
+        'gray-5': '#2a2e35',
       },
     },
     keyframes: {
