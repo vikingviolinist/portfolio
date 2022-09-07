@@ -1,5 +1,4 @@
 <script lang="ts">
-  import { sections } from './sections';
   import './styles.css';
 
   import ThemeToggle from './lib/ThemeToggle.svelte';
