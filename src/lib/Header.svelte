@@ -83,7 +83,7 @@
             class="btn-container inline-block absolute lg:relative right-0 -top-[17%]"
           >
             <a
-              href="/public/assets/Michal_Petrik.pdf"
+              href="./assets/Michal_Petrik.pdf"
               download
               class="main-btn z-0 relative rounded-[30px] font-semibold border border-primary dark:border-secondary flex items-center overflow-hidden
               before:absolute before:-z-[1] before:w-full before:h-full before:translate-x-full before:transition-all before:duration-500 before:ease-in-out
