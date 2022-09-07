@@ -5,7 +5,7 @@
 <section class={active ? 'animate-scale' : 'hidden'}>
   <div class="main-title">
     <h2>
-      My <span>Portfolio</span><span class="bg-text">my portfolio</span>
+      Mine <span>Prosjekter</span><span class="bg-text">mine prosjekter</span>
     </h2>
   </div>
   <p class="port-text">

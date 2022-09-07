@@ -67,17 +67,19 @@
         />
         <div class="relative lg:-left-10">
           <h1 class="name text-3xl lg:text-5xl font-bold">
-            Hi, I'm <span class="text-primary dark:text-secondary">Lorem</span> Dolor
-            sit amet consectetur
+            Hei, jeg er <span class="text-primary dark:text-secondary"
+              >Michal</span
+            >, en utvikler med stor motivasjon og interesse for tech
           </h1>
           <p class="my-4 lg:my-10 text-md lg:text-lg">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga,
-            praesentium at. Iste inventore id architecto incidunt, pariatur
-            placeat odit, dolores quaerat earum minus fugiat adipisci dolorum
-            consequuntur assumenda quis unde. Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Expedita, cumque alias eveniet quidem
-            optio velit harum minima necessitatibus corrupti est! Illum quis
-            eligendi nesciunt tenetur iure est sint, soluta incidunt?
+            Jeg har jobbet som Frontend/Backend/DevOps utvikler hos
+            tech-selskaper som lager digitale B2B løsninger. I mine roller har
+            jeg hatt ansvar for å bl.a. utvikle nye features, designe APIer,
+            sette opp CI/CD pipelines, skrive tester, lage data warehouses og
+            utvikle verktøy for analytics. Jeg elsker utfordringer, har stor
+            arbeidskapasitet, samt stort driv for å lære seg nye teknologier.
+            Det at jeg er utdannet musiker og tolk/oversetter viser mitt øye for
+            detaljer.
           </p>
           <div
             class="btn-container inline-block absolute lg:relative right-0 -top-[17%]"
@@ -91,7 +93,7 @@
             >
               <span
                 class="btn-text text-sm lg:text-lg px-4 lg:px-8 text-primary dark:text-secondary group-hover:text-white
-                  transition-all">Download CV</span
+                  transition-all">Last ned CV</span
               >
               <span
                 class="btn-icon p-3 lg:p-4 bg-primary dark:bg-secondary flex items-center justify-center rounded-[50%]"

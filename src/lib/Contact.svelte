@@ -6,7 +6,7 @@
   <div class="contact-container">
     <div class="main-title">
       <h2>
-        Contact <span>Me</span> <span class="bg-text">Contact me</span>
+        Skriv til <span>meg</span> <span class="bg-text">Skriv til meg</span>
       </h2>
     </div>
     <div class="contact-content-con">

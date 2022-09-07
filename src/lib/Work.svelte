@@ -8,7 +8,9 @@
 <section class={active ? 'animate-scale' : 'hidden'} id="experience">
   <div class="main-title">
     <h2>
-      My <span>experience</span><span class="bg-text">my experience</span>
+      Min <span>Arbeidserfaring</span><span class="bg-text"
+        >min arbeidserfaring</span
+      >
     </h2>
   </div>
   <div class="about-container">

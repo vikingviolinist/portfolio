@@ -1,7 +1,7 @@
 export const sections = [
-  { icon: 'home', tooltip: 'Home' },
-  { icon: 'briefcase', tooltip: 'Work' },
-  { icon: 'user-graduate', tooltip: 'Education' },
-  { icon: 'laptop', tooltip: 'Projects' },
-  { icon: 'envelope', tooltip: 'Contact' },
+  { icon: 'home', tooltip: 'Hjem' },
+  { icon: 'briefcase', tooltip: 'Jobb' },
+  { icon: 'user-graduate', tooltip: 'Utdanning' },
+  { icon: 'laptop', tooltip: 'Prosjekter' },
+  { icon: 'envelope', tooltip: 'Kontakt' },
 ];
