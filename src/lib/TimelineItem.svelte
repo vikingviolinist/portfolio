@@ -6,7 +6,7 @@
 
 <div class="relative pl-12 border-l-2 border-gray-5">
   <div
-    class="absolute -left-7 -top-1 bg-secondary w-12 h-12 rounded-3xl flex items-center justify-center"
+    class="absolute -left-[27px] -top-[5px] bg-secondary w-[50px] h-[50px] rounded-3xl flex items-center justify-center"
   >
     <i class="fas fa-briefcase" />
   </div>
@@ -19,7 +19,7 @@
     {job.title}
     <span class="text-gray-2 font-medium text-xl">- {job.company}</span>
   </h5>
-  <p class="text-gray-2">
+  <p class="text-gray-2 text-justify">
     {job.description}
   </p>
 </div>
