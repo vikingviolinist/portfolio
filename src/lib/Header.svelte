@@ -73,7 +73,7 @@
           </h1>
           <p class="my-4 text-center">🚧 Siden under utvikling 🚧</p>
           <p class="my-4 lg:my-10 text-md lg:text-lg">
-            Jeg har jobbet som Frontend/Backend/DevOps utvikler hos
+            Jeg har jobbet som Frontend / Backend / DevOps utvikler hos
             tech-selskaper som lager digitale B2B løsninger. I mine roller har
             jeg hatt ansvar for å bl.a. utvikle nye features, designe APIer,
             sette opp CI/CD pipelines, skrive tester, lage data warehouses og
