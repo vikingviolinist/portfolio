@@ -17,9 +17,15 @@ module.exports = {
         '0%': { transform: 'translateY(-100%) scaleY(0)' },
         '100%': { transform: 'translateY(0) scaleY(1)' },
       },
+      pulse: {
+        '0%': { transform: 'scale(1)' },
+        '50%': { transform: 'scale(1.1)' },
+        '100%': { transform: 'scale(1)' },
+      },
     },
     animation: {
       scale: 'scale 1s ease-in-out',
+      pulse: 'pulse 2s ease-in-out infinite',
     },
   },
   plugins: [],
