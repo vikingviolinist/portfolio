@@ -71,7 +71,9 @@
               >Michal</span
             >, en utvikler med stor motivasjon og interesse for tech
           </h1>
-          <p class="my-4 text-center">🚧 Siden under utvikling 🚧</p>
+          <p class="my-4 text-center animate-pulse">
+            🚧 Siden under utvikling 🚧
+          </p>
           <p class="my-4 lg:my-10 text-md lg:text-lg">
             Jeg har jobbet som Frontend / Backend / DevOps utvikler hos
             tech-selskaper som lager digitale B2B løsninger. I mine roller har
@@ -79,8 +81,8 @@
             sette opp CI/CD pipelines, skrive tester, lage data warehouses og
             utvikle verktøy for analytics. Jeg elsker utfordringer, har stor
             arbeidskapasitet, samt stort driv for å lære seg nye teknologier.
-            Det at jeg er utdannet musiker og tolk/oversetter viser mitt øye for
-            detaljer.
+            Det at jeg er utdannet musiker og tolk / oversetter viser mitt øye
+            for detaljer.
           </p>
           <div
             class="btn-container inline-block absolute lg:relative right-0 -top-[17%]"
