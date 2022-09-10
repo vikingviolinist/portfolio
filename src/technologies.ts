@@ -24,6 +24,7 @@ export const technologies = [
   'git',
   'github',
   'npm',
+  'webpack',
   'babel',
   'bootstrap',
   'circleci',
