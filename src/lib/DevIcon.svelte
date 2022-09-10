@@ -36,6 +36,8 @@
   import trello from './icons/trello.svelte';
   import webpack from './icons/webpack.svelte';
 
+  import Tooltip from './Tooltip.svelte';
+
   export let technology: string;
   const icons = {
     go,
@@ -82,8 +84,12 @@
   let component = icons[technology];
 </script>
 
-<div
-  class="w-12 grayscale-[30%] hover:scale-150 hover:grayscale-0 transition-all duration-200 ease-in-out text-6xl"
->
-  <svelte:component this={component} />
+<div class="group relative flex justify-center">
+  <div
+    class="w-12 grayscale-[30%] hover:scale-150 hover:grayscale-0 transition-all duration-200 
+          ease-in-out group"
+  >
+    <svelte:component this={component} />
+  </div>
+  <Tooltip position="bottom-16" origin="bottom" tooltip={technology} />
 </div>

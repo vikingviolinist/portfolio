@@ -1,4 +1,6 @@
 <script lang="ts">
+  import Tooltip from './Tooltip.svelte';
+
   export let icon: string;
   export let tooltip: string;
   export let toggleActive;
@@ -15,10 +17,5 @@
     class="fas fa-{icon} text-xl pointer-events-none group-hover:text-white
         {active ? 'text-white' : 'text-gray-2 dark:text-gray-400'}"
   />
-  <span
-    class="hidden lg:block absolute w-auto p-2 m-2 min-w-max right-14 rounded-md shadow-md
-      text-white bg-gray-4 text-xs font-bold
-      transition-all duration-300 scale-0 origin-right group-hover:scale-100"
-    >{tooltip}</span
-  >
+  <Tooltip position="right-14" origin="right" {tooltip} />
 </button>
