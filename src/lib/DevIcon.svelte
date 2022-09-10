@@ -34,12 +34,15 @@
   import sass from './icons/sass.svelte';
   import ubuntu from './icons/ubuntu.svelte';
   import trello from './icons/trello.svelte';
+  import webpack from './icons/webpack.svelte';
 
   export let technology: string;
   const icons = {
     go,
     react,
     svelte,
+    // sveltekit,
+    // netlify,
     angularjs,
     nodejs,
     javascript,
@@ -72,6 +75,8 @@
     sass,
     ubuntu,
     trello,
+    webpack,
+    // vite
   };
 
   let component = icons[technology];

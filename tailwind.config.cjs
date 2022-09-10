@@ -24,7 +24,7 @@ module.exports = {
       },
     },
     animation: {
-      scale: 'scale 1s ease-in-out',
+      scale: 'scale 0.8s ease-out',
       pulse: 'pulse 2s ease-in-out infinite',
     },
   },
