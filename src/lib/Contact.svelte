@@ -1,34 +1,31 @@
 <script lang="ts">
+  import Section from './Section.svelte';
+  import Button from './Button.svelte';
   export let active: boolean;
 </script>
 
-<section class={active ? 'animate-scale' : 'hidden'}>
+<Section {active} type="Kontakt">
   <div class="contact-container">
-    <div class="main-title">
-      <h2>
-        Skriv til <span>meg</span> <span class="bg-text">Skriv til meg</span>
-      </h2>
-    </div>
-    <div class="contact-content-con">
-      <div class="left-contact">
+    <div class="flex gap-8 flex-col lg:flex-row">
+      <div class="left-contact flex-[2]">
         <div class="contact-info">
-          <div class="contact-item">
-            <div class="icon">
-              <i class="fas fa-map-marker-alt" />
+          <div class="flex justify-between items-center">
+            <div class="grid grid-cols-[40px_1fr]">
+              <i class="fas fa-map-marker-alt flex items-center text-lg" />
               <span>Location</span>
             </div>
             <p>Oslo, Norway</p>
           </div>
-          <div class="contact-item">
-            <div class="icon">
-              <i class="fas fa-envelope" />
+          <div class="flex justify-between items-center">
+            <div class="grid grid-cols-[40px_1fr]">
+              <i class="fas fa-envelope flex items-center text-lg" />
               <span>Email</span>
             </div>
             <p>misopetrik@gmail.com</p>
           </div>
-          <div class="contact-item">
-            <div class="icon">
-              <i class="fas fa-globe" />
+          <div class="flex justify-between items-center">
+            <div class="grid grid-cols-[40px_1fr]">
+              <i class="fas fa-globe flex items-center text-lg" />
               <span>Languages</span>
             </div>
             <p>
@@ -36,42 +33,45 @@
             </p>
           </div>
         </div>
-        <div class="contact-icons">
-          <div class="contact-icon">
-            <a href="https://github.com/vikingviolinist" target="_blank">
-              <i class="fab fa-facebook" />
-            </a><a href="https://github.com/vikingviolinist" target="_blank">
-              <i class="fab fa-twitter" />
-            </a>
-            <a href="https://github.com/vikingviolinist" target="_blank">
-              <i class="fab fa-github" />
-            </a>
-            <a href="https://github.com/vikingviolinist" target="_blank">
-              <i class="fab fa-youtube" />
-            </a>
-          </div>
+        <div class="flex mt-8">
+          <Button
+            icon="fab fa-linkedin"
+            link="https://github.com/vikingviolinist"
+          />
+          <Button
+            icon="fab fa-github"
+            link="https://github.com/vikingviolinist"
+          />
         </div>
       </div>
-      <div class="right-contact">
-        <form action="" class="contact-form">
-          <div class="input-control i-c-2">
-            <input type="text" required placeholder="Your name" />
-            <input type="text" required placeholder="Your email" />
-          </div>
-          <div class="input-control">
-            <input type="text" required placeholder="Enter subject" />
-          </div>
-          <div class="input-control">
-            <textarea
-              name=""
-              id=""
-              cols="15"
-              rows="10"
-              placeholder="Message here..."
-            />
-          </div>
+      <div class="flex-[3]">
+        <form action="" class="flex flex-col gap-3">
+          <input
+            class="w-full rounded-3xl px-5 py-3 bg-gray-5 text-white"
+            type="text"
+            required
+            placeholder="Your name"
+          />
+          <input
+            class="w-full rounded-3xl px-5 py-3 bg-gray-5 text-white"
+            type="text"
+            required
+            placeholder="Your email"
+          />
+          <input
+            class="w-full rounded-3xl px-5 py-3 bg-gray-5 text-white"
+            type="text"
+            required
+            placeholder="Enter subject"
+          />
+          <textarea
+            class="w-full rounded-3xl bg-gray-5 px-5 py-3 resize-none"
+            cols="15"
+            rows="10"
+            placeholder="Message here..."
+          />
         </form>
       </div>
     </div>
   </div>
-</section>
+</Section>

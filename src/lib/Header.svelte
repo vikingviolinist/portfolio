@@ -8,10 +8,8 @@
 </script>
 
 <header
-  class="header duration-500 min-h-screen bg-secondary dark:bg-primary text-white overflow-hidden
-      transition-all duration-400 ease-in-out {active
-    ? 'animate-scale'
-    : 'hidden'}"
+  class="header  min-h-screen bg-secondary dark:bg-primary overflow-hidden
+      transition-all ease-in-out {active ? 'animate-scale' : 'hidden'}"
 >
   <div class="header-content grid lg:grid-cols-[800px,1fr] min-h-screen">
     <div class="left-header relative w-[70%] lg:w-full">
@@ -66,12 +64,13 @@
           class="empty w-[200px] h-[400px] float-left clip-path-text shape-outside hidden lg:inline"
         />
         <div class="relative lg:-left-10">
-          <h1 class="name text-3xl lg:text-5xl font-bold">
-            Hei, jeg er <span class="text-primary dark:text-secondary"
+          <h1 class="text-white text-3xl lg:text-5xl font-bold">
+            Hei, jeg er <span
+              class="dark:text-secondary text-primary transition-all duration-500 ease-in-out"
               >Michal</span
             >, en utvikler med stor motivasjon og interesse for tech
           </h1>
-          <p class="my-4 text-center animate-pulse">
+          <p class="my-4 text-white text-center animate-pulse">
             🚧 Siden under utvikling 🚧
           </p>
           <p class="my-4 lg:my-10 text-md lg:text-lg">
