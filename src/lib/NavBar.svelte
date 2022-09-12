@@ -3,6 +3,7 @@
   import NavBarButton from './NavBarButton.svelte';
 
   export let toggleActive: (icon: string) => boolean;
+  export let loadProjects;
   export let selectedIcon: string;
 </script>
 
@@ -12,6 +13,7 @@
 >
   {#each sections as { icon, tooltip }}
     <NavBarButton
+      {loadProjects}
       active={icon === selectedIcon}
       {toggleActive}
       {tooltip}
