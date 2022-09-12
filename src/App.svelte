@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { createApi } from 'unsplash-js';
   import './styles.css';
 
   import ThemeToggle from './lib/ThemeToggle.svelte';
@@ -11,13 +12,28 @@
 
   let selectedIcon: string = 'home';
 
+  let images;
+
   const toggleActive = (icon) => (selectedIcon = icon);
+
+  const loadProjects = () => {
+    if (images) return;
+
+    const accessKey = '2jacHDYybwpIjozi70jBxq_FdkhUhap37l99qairwI0';
+    const unsplash = createApi({ accessKey });
+    const promise = unsplash.photos
+      .getRandom({
+        query: 'programming',
+        count: 6,
+      })
+      .then(({ response }) => (images = response));
+  };
 </script>
 
 <ThemeToggle />
-<NavBar {selectedIcon} {toggleActive} />
+<NavBar {selectedIcon} {toggleActive} {loadProjects} />
 <Header active={selectedIcon === 'home'} />
 <Work active={selectedIcon === 'briefcase'} />
 <Education active={selectedIcon === 'user-graduate'} />
-<Projects active={selectedIcon === 'laptop'} />
+<Projects active={selectedIcon === 'laptop'} {images} />
 <Contact active={selectedIcon === 'envelope'} />
