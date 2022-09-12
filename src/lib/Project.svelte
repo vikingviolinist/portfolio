@@ -1,4 +1,7 @@
 <script lang="ts">
+  import Go from './icons/Go.svelte';
+  import React from './icons/React.svelte';
+  import Svelte from './icons/Svelte.svelte';
   import Button from './Button.svelte';
 
   export let path: string;
@@ -21,6 +24,19 @@
     <div class="flex justify-center items-center">
       <Button icon="fa fa-rocket" link="https://github.com/vikingviolinist" />
       <Button icon="fab fa-github" link="https://github.com/vikingviolinist" />
+    </div>
+    <div
+      class="absolute flex justify-start flex-wrap gap-2 w-full p-1 bottom-0"
+    >
+      <span class="w-8"> <Go /></span>
+      <span class="w-8"><React /></span>
+      <span class="w-8"><Svelte /></span>
+      <span class="w-8"> <Go /></span>
+      <span class="w-8"><React /></span>
+      <span class="w-8"><Svelte /></span>
+      <span class="w-8"> <Go /></span>
+      <span class="w-8"><React /></span>
+      <span class="w-8"><Svelte /></span>
     </div>
   </div>
 </div>
