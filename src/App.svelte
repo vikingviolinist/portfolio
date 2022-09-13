@@ -12,6 +12,7 @@
 
   let selectedIcon: string = 'home';
 
+  let projects;
   let images;
 
   const toggleActive = (icon) => (selectedIcon = icon);
@@ -21,12 +22,22 @@
 
     const accessKey = '2jacHDYybwpIjozi70jBxq_FdkhUhap37l99qairwI0';
     const unsplash = createApi({ accessKey });
-    const promise = unsplash.photos
-      .getRandom({
-        query: 'programming',
-        count: 6,
-      })
-      .then(({ response }) => (images = response));
+
+    fetch('https://api.github.com/users/vikingviolinist/repos?per_page=70')
+      .then((res) => res.json())
+      .then((repo) => {
+        projects = repo.filter((project) =>
+          project.topics.includes('portfolio')
+        );
+        unsplash.photos
+          .getRandom({
+            query: 'programming',
+            count: projects.length,
+          })
+          .then(({ response }) => {
+            images = response;
+          });
+      });
   };
 </script>
 
@@ -35,5 +46,5 @@
 <Header active={selectedIcon === 'home'} />
 <Work active={selectedIcon === 'briefcase'} />
 <Education active={selectedIcon === 'user-graduate'} />
-<Projects active={selectedIcon === 'laptop'} {images} />
+<Projects active={selectedIcon === 'laptop'} {projects} {images} />
 <Contact active={selectedIcon === 'envelope'} />

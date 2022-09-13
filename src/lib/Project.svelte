@@ -1,18 +1,18 @@
 <script lang="ts">
-  import Go from './icons/Go.svelte';
-  import React from './icons/React.svelte';
-  import Svelte from './icons/Svelte.svelte';
   import Button from './Button.svelte';
 
   export let path: string;
+  export let project;
+  export let icons = [];
 </script>
 
 <div class="relative group">
-  <div class="image">
+  <div class="relative flex justify-center items-center ">
+    <h1 class="absolute mb-32 text-xl font-bold z-10">{project.name}</h1>
     <img
-      class="w-full h-72 object-cover rounded-2xl"
+      class="w-full h-72 object-cover rounded-2xl grayscale-[70%]"
       src={path}
-      alt="Project 1"
+      alt={project.name}
     />
   </div>
   <div
@@ -22,21 +22,19 @@
                 group-hover:opacity-80 group-hover:scale-100"
   >
     <div class="flex justify-center items-center">
-      <Button icon="fa fa-rocket" link="https://github.com/vikingviolinist" />
-      <Button icon="fab fa-github" link="https://github.com/vikingviolinist" />
+      {#if project.homepage}
+        <Button icon="fa fa-rocket" link={project.homepage} />
+      {/if}
+      <Button icon="fab fa-github" link={project.url} />
     </div>
     <div
       class="absolute flex justify-start flex-wrap gap-2 w-full p-1 bottom-0"
     >
-      <span class="w-8"> <Go /></span>
-      <span class="w-8"><React /></span>
-      <span class="w-8"><Svelte /></span>
-      <span class="w-8"> <Go /></span>
-      <span class="w-8"><React /></span>
-      <span class="w-8"><Svelte /></span>
-      <span class="w-8"> <Go /></span>
-      <span class="w-8"><React /></span>
-      <span class="w-8"><Svelte /></span>
+      {#each icons as icon}
+        <span class="w-8">
+          <svelte:component this={icon.component} />
+        </span>
+      {/each}
     </div>
   </div>
 </div>
