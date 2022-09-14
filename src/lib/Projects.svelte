@@ -37,6 +37,7 @@
   import webpack from './icons/webpack.svelte';
   import vite from './icons/vite.svelte';
   import parcel from './icons/parcel.svelte';
+  import netlify from './icons/netlify.svelte';
 
   import { technologies } from '../technologies';
   import DevIcon from './DevIcon.svelte';
@@ -50,8 +51,7 @@
     go,
     react,
     svelte,
-    // sveltekit,
-    // netlify,
+    netlify,
     angular,
     nodejs,
     javascript,
