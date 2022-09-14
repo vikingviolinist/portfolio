@@ -36,4 +36,5 @@ export const technologies = [
   'ubuntu',
   'bash',
   'vite',
+  'parcel',
 ];
