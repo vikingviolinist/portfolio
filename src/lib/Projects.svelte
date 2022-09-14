@@ -1,13 +1,13 @@
 <script lang="ts">
-  import go from './icons/Go.svelte';
-  import react from './icons/React.svelte';
-  import svelte from './icons/Svelte.svelte';
-  import angular from './icons/Angular.svelte';
-  import nodejs from './icons/Nodejs.svelte';
-  import javascript from './icons/Javascript.svelte';
-  import typescript from './icons/Typescript.svelte';
-  import html from './icons/Html.svelte';
-  import css from './icons/Css.svelte';
+  import go from './icons/go.svelte';
+  import react from './icons/react.svelte';
+  import svelte from './icons/svelte.svelte';
+  import angular from './icons/angular.svelte';
+  import nodejs from './icons/nodejs.svelte';
+  import javascript from './icons/javascript.svelte';
+  import typescript from './icons/typescript.svelte';
+  import html from './icons/html.svelte';
+  import css from './icons/css.svelte';
   import tailwindcss from './icons/tailwindcss.svelte';
   import graphql from './icons/graphql.svelte';
   import jest from './icons/jest.svelte';
@@ -15,7 +15,7 @@
   import postgresql from './icons/postgresql.svelte';
   import mongodb from './icons/mongodb.svelte';
   import docker from './icons/docker.svelte';
-  import amazonwebservices from './icons/amazonwebservices.svelte';
+  import aws from './icons/aws.svelte';
   import github from './icons/github.svelte';
   import git from './icons/git.svelte';
   import babel from './icons/babel.svelte';
@@ -38,6 +38,7 @@
   import vite from './icons/vite.svelte';
   import parcel from './icons/parcel.svelte';
   import netlify from './icons/netlify.svelte';
+  import prettier from './icons/prettier.svelte';
 
   import { technologies } from '../technologies';
   import DevIcon from './DevIcon.svelte';
@@ -65,7 +66,7 @@
     postgresql,
     mongodb,
     docker,
-    amazonwebservices,
+    aws,
     github,
     git,
     babel,
@@ -87,6 +88,7 @@
     webpack,
     vite,
     parcel,
+    prettier,
   };
 </script>
 

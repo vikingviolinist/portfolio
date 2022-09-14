@@ -20,7 +20,7 @@ export const technologies = [
   'mongodb',
   'go',
   'docker',
-  'amazonwebservices',
+  'aws',
   'git',
   'github',
   'npm',
@@ -38,4 +38,5 @@ export const technologies = [
   'vite',
   'parcel',
   'netlify',
+  'prettier',
 ];
