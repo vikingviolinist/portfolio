@@ -95,10 +95,9 @@
         <Project
           {project}
           path={images[index].urls.small}
-          icons={project.topics.map((icon) => {
-            if (icon === 'portfolio') return { component: null };
-            return { component: icons[icon] };
-          })}
+          icons={project.topics
+            .filter((icon) => icon !== 'portfolio')
+            .map((icon) => ({ component: icons[icon] }))}
         />
       {/each}
     {/if}
