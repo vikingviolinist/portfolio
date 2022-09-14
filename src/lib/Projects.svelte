@@ -35,6 +35,7 @@
   import ubuntu from './icons/ubuntu.svelte';
   import trello from './icons/trello.svelte';
   import webpack from './icons/webpack.svelte';
+  import vite from './icons/vite.svelte';
 
   import { technologies } from '../technologies';
   import DevIcon from './DevIcon.svelte';
@@ -83,7 +84,7 @@
     ubuntu,
     trello,
     webpack,
-    // vite
+    vite,
     // parcel
   };
 </script>

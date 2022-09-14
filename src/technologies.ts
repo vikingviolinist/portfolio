@@ -35,4 +35,5 @@ export const technologies = [
   'linux',
   'ubuntu',
   'bash',
+  'vite',
 ];
