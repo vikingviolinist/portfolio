@@ -1,5 +1,5 @@
-export { default as go } from './go.svelte';
 export { default as react } from './react.svelte';
+export { default as go } from './go.svelte';
 export { default as svelte } from './svelte.svelte';
 export { default as angular } from './angular.svelte';
 export { default as nodejs } from './nodejs.svelte';
