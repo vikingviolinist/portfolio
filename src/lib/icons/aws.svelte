@@ -11,10 +11,7 @@
   style="enable-background:new 0 0 304 182;"
   xml:space="preserve"
 >
-  <style type="text/css">
-    .st0 {
-      fill: #252f3e;
-    }
+  <style>
     .st1 {
       fill-rule: evenodd;
       clip-rule: evenodd;
@@ -23,6 +20,7 @@
   </style>
   <g>
     <path
+      fill="#252f3e"
       class="st0"
       d="M86.4,66.4c0,3.7,0.4,6.7,1.1,8.9c0.8,2.2,1.8,4.6,3.2,7.2c0.5,0.8,0.7,1.6,0.7,2.3c0,1-0.6,2-1.9,3l-6.3,4.2
 		c-0.9,0.6-1.8,0.9-2.6,0.9c-1,0-2-0.5-3-1.4C76.2,90,75,88.4,74,86.8c-1-1.7-2-3.6-3.1-5.9c-7.8,9.2-17.6,13.8-29.4,13.8
