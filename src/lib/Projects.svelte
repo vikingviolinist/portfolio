@@ -1,5 +1,5 @@
 <script lang="ts">
-  import * as icons from './icons';
+  import * as icons from './icons/index';
   import DevIcon from './DevIcon.svelte';
   import Section from './Section.svelte';
   import Project from './Project.svelte';
