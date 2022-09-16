@@ -17,8 +17,14 @@
     --color-grey-6: #12181b;
     --br-sm-2: 14px;
     --box-shadow-1: 0 3px 15px rgba(0, 0, 0, 0.3);
+    -ms-overflow-style: none;
+    scrollbar-width: none;
   }
-  h1 {
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  h1,
+  p {
     hyphens: auto;
   }
 }
