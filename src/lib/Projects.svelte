@@ -18,7 +18,9 @@
           path={images[index].urls.small}
           icons={project.topics
             .filter((icon) => icon !== 'portfolio')
-            .map((icon) => ({ component: icons[icon] }))}
+            .map((icon) => ({
+              component: icons[icon.charAt(0).toUpperCase() + icon.slice(1)],
+            }))}
         />
       {/each}
     {/if}
