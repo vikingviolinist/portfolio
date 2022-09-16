@@ -6,9 +6,11 @@
   export let icons = [];
 </script>
 
-<div class="relative group">
+<div class="relative group text-white">
   <div class="relative flex justify-center items-center ">
-    <h1 class="absolute mb-32 text-xl font-bold z-10">{project.name}</h1>
+    <div class="absolute top-10 text-xl font-bold z-10 text-center">
+      <h1>{project.name}</h1>
+    </div>
     <img
       class="w-full h-72 object-cover rounded-2xl grayscale-[70%]"
       src={path}
@@ -17,10 +19,13 @@
   </div>
   <div
     class="w-full h-full bg-secondary absolute left-0 top-0 
-                rounded-2xl flex flex-col justify-center items-center
-                opacity-0 scale-0 transition-all duration-500 ease-in-out
-                group-hover:opacity-80 group-hover:scale-100"
+  rounded-2xl flex flex-col justify-center items-center
+  opacity-0 scale-0 transition-all duration-500 ease-in-out
+  group-hover:opacity-90 group-hover:scale-100"
   >
+    <p class="text-sm font-semibold text-start p-2">
+      {project.description || ''}
+    </p>
     <div class="flex justify-center items-center">
       {#if project.homepage}
         <Button icon="fa fa-rocket" link={project.homepage} />
