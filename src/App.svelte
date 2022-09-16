@@ -32,7 +32,7 @@
         );
         unsplash.photos
           .getRandom({
-            query: 'programming',
+            collectionIds: ['7P0uGtLS0rY'],
             count: projects.length,
           })
           .then(({ response }) => {
