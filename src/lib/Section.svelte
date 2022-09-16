@@ -7,7 +7,7 @@
 
 <section
   class="min-h-screen px-8 md:px-24 lg:px-36 xl:px-72 py-10 lg:py-12 {active
-    ? 'animate-scale'
+    ? 'block'
     : 'hidden'}"
 >
   <div class="text-center">
