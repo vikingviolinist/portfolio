@@ -25,7 +25,7 @@
       {#if project.homepage}
         <Button icon="fa fa-rocket" link={project.homepage} />
       {/if}
-      <Button icon="fab fa-github" link={project.url} />
+      <Button icon="fab fa-github" link={project.html_url} />
     </div>
     <div
       class="absolute flex justify-start flex-wrap gap-2 w-full p-1 bottom-0"
