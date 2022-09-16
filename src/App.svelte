@@ -23,17 +23,12 @@
     const accessKey = '2jacHDYybwpIjozi70jBxq_FdkhUhap37l99qairwI0';
     const unsplash = createApi({ accessKey });
 
-    fetch('https://api.github.com/user/repos?per_page=170&affiliation=owner', {
-      headers: {
-        authorization: `token ${process.env.GITHUB_TOKEN}`,
-      },
-    })
+    fetch('https://api.github.com/users/vikingviolinist/repos?per_page=60')
       .then((res) => res.json())
       .then((repo) => {
         projects = repo.filter((project) =>
           project.topics.includes('portfolio')
         );
-        console.log(projects);
         unsplash.photos
           .getRandom({
             query: 'programming',
