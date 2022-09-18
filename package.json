@@ -34,7 +34,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@sveltejs/adapter-vercel": "^1.0.0-next.76",
+		"@sveltejs/adapter-static": "^1.0.0-next.43",
 		"unsplash-js": "^7.0.15"
 	}
 }
