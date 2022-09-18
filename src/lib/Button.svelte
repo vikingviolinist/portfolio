@@ -10,5 +10,5 @@
   href={link}
   target="_blank"
 >
-  <i class="{icon}  text-white flex items-center justify-center text-xl" />
+  <i class="{icon} text-white flex items-center justify-center text-xl" />
 </a>

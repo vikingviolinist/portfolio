@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	html {
+		height: 100%;
+		overflow: auto;
+	}
+	body {
+		height: 100%;
+	}
+	:root {
+		--color-primary: #191d2b;
+		--color-secondary: #f6af04;
+		--color-white: #ffffff;
+		--color-black: #000;
+		--color-grey0: #f8f8f8;
+		--color-grey-1: #dbe1e8;
+		--color-grey-2: #b2becd;
+		--color-grey-3: #6c7983;
+		--color-grey-4: #454e56;
+		--color-grey-5: #2a2e35;
+		--color-grey-6: #12181b;
+		--br-sm-2: 14px;
+		--box-shadow-1: 0 3px 15px rgba(0, 0, 0, 0.3);
+		-ms-overflow-style: none;
+		scrollbar-width: none;
+	}
+	::-webkit-scrollbar {
+		display: none;
+	}
+	h1,
+	p {
+		hyphens: auto;
+	}
+}
+
+@layer utilities {
+	.clip-path-left {
+		clip-path: polygon(0 0, 40% 0, 66% 100%, 0% 120%);
+	}
+	.clip-path-right {
+		clip-path: polygon(0 0, 40% 0, 66% 100%, 120% 0%);
+	}
+	.clip-path-text {
+		clip-path: polygon(0% 0%, 100% 0%, 0% 100%);
+	}
+	.shape-outside {
+		shape-outside: polygon(0% 0%, 100% 0%, 0% 100%);
+	}
+}
