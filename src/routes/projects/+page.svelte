@@ -1,4 +1,7 @@
-<script lang="ts" context="module">
+<script lang="ts">
+	import Header from '../../lib/Header.svelte';
+	import Project from './Project.svelte';
+	import type { Project as IProject } from '../../interfaces/Project';
 	import { createApi } from 'unsplash-js';
 	import * as icons from '../icons/index';
 
@@ -131,12 +134,6 @@
 	};
 
 	let projects = loadProjects();
-</script>
-
-<script lang="ts">
-	import Header from '../../lib/Header.svelte';
-	import Project from './Project.svelte';
-	import type { Project as IProject } from '../../interfaces/Project';
 </script>
 
 <section class="min-h-screen px-8 md:px-24 lg:px-36 xl:px-72 py-10 lg:py-12 flex flex-col gap-16">
