@@ -138,7 +138,7 @@
 	import type { Project as IProject } from '../../interfaces/Project';
 </script>
 
-<section class="min-h-screen px-8 md:px-24 lg:px-36 xl:px-72 py-10 lg:py-12 flex flex-col gap-16">
+<section class="min-h-screen px-4 md:px-24 lg:px-36 xl:px-72 py-10 lg:py-12 flex flex-col gap-16">
 	<Header title="Mine Prosjekter" />
 	{#await projects then projects}
 		<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
