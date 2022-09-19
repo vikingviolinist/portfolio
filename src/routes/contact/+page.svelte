@@ -3,7 +3,7 @@
 	import Button from '../../lib/Button.svelte';
 </script>
 
-<section class="px-8 md:px-24 lg:px-36 xl:px-72 py-10 lg:py-12 flex flex-col gap-16">
+<section class="px-4 md:px-24 lg:px-36 xl:px-72 py-10 lg:py-12 flex flex-col gap-16">
 	<Header title="Kontakt" />
 	<div class="contact-container">
 		<div class="flex gap-8 flex-col lg:flex-row">
