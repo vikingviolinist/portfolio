@@ -1,71 +1,8 @@
 <script context="module" lang="ts">
 	import { createApi } from 'unsplash-js';
+
 	import * as icons from '../icons/index';
-	const backgroundColors = [
-		'blue',
-		'yellow',
-		'red',
-		'salmon',
-		'pink',
-		'green',
-		'brown',
-		'blue',
-		'yellow',
-		'red',
-		'salmon',
-		'pink',
-		'green',
-		'brown',
-		'blue',
-		'yellow',
-		'red',
-		'salmon',
-		'pink',
-		'green',
-		'brown',
-		'blue',
-		'yellow',
-		'red',
-		'salmon',
-		'pink',
-		'green',
-		'brown',
-		'blue',
-		'yellow',
-		'red',
-		'salmon',
-		'pink',
-		'green',
-		'brown',
-		'blue',
-		'yellow',
-		'red',
-		'salmon',
-		'pink',
-		'green',
-		'brown',
-		'blue',
-		'yellow',
-		'red',
-		'salmon',
-		'pink',
-		'green',
-		'brown',
-		'blue',
-		'yellow',
-		'red',
-		'salmon',
-		'pink',
-		'green',
-		'brown',
-		'blue',
-		'yellow',
-		'red',
-		'salmon',
-		'pink',
-		'green',
-		'brown'
-	];
+	import { colors } from './colors';
 
 	const fetchRepos = async () => {
 		let repos;
@@ -82,7 +19,8 @@
 	const fetchImages = async (count: number) => {
 		const accessKey = '2jacHDYybwpIjozi70jBxq_FdkhUhap37l99qairwI0';
 		const unsplash = createApi({ accessKey });
-		let images;
+		let images = colors.map((background) => ({ path: '', background }));
+
 		try {
 			const res = await unsplash.photos.getRandom({
 				collectionIds: ['7P0uGtLS0rY'],
@@ -93,9 +31,7 @@
 			if (images && images instanceof Array) {
 				images = images.map((image) => ({ path: image.urls.small, background: '' }));
 			}
-		} catch (error) {
-			images = backgroundColors.map((background) => ({ path: '', background }));
-		}
+		} catch (error) {}
 
 		return images;
 	};
