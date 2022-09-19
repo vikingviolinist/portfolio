@@ -1,11 +1,13 @@
 <script lang="ts">
+	import { fly } from 'svelte/transition';
 	import Button from '../../lib/Button.svelte';
 	import type { Project } from '../../interfaces/Project';
 
+	export let delay: number = 100;
 	export let project: Project;
 </script>
 
-<div class="relative group text-white">
+<div in:fly={{ x: -1000, delay, duration: 1000 }} class="relative group text-white">
 	<div class="relative flex justify-center items-center ">
 		<div class="absolute top-10 text-xl font-bold z-10 text-center">
 			<h1>{project.name}</h1>
@@ -17,7 +19,9 @@
 				alt={project.name}
 			/>
 		{:else}
-			<div class="w-full h-72 object-cover rounded-2xl grayscale-[70%] bg-[{project.background}]" />
+			<div
+				class="w-full h-72 object-cover rounded-2xl grayscale-[70%] bg-{project.background}-500"
+			/>
 		{/if}
 	</div>
 	<div
