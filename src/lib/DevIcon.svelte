@@ -4,9 +4,11 @@
 
 	export let component;
 	export let tooltip: string;
+	export let delay: number;
 </script>
 
 <div
+	in:fade={{ delay }}
 	class="group relative flex justify-center items-center 
 			"
 >
