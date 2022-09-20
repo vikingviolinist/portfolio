@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { fade } from 'svelte/transition';
+	import { scale } from 'svelte/transition';
 	import Tooltip from '../lib/Tooltip.svelte';
 
 	export let component;
@@ -8,11 +8,11 @@
 </script>
 
 <div
-	in:fade={{ delay }}
 	class="group relative flex justify-center items-center 
 			"
 >
 	<div
+		in:scale={{ delay }}
 		class="w-12 lg:w-20 grayscale-[30%] hover:scale-150 hover:grayscale-0 transition-all 
           ease-in-out group"
 	>
