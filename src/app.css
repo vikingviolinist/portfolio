@@ -9,6 +9,7 @@
 	}
 	body {
 		height: 100%;
+		@apply bg-white dark:bg-black text-black dark:text-white text-center;
 	}
 	:root {
 		--color-primary: #191d2b;
