@@ -1,21 +1,33 @@
 import { browser } from '$app/environment';
 import { writable } from 'svelte/store';
 
-const defaultTheme = 'dark';
-const initialValue = browser
-	? (window.localStorage.getItem('theme') ||
-			(!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) ??
-	  defaultTheme
-	: defaultTheme;
+type Theme = 'dark' | 'light';
 
-// Set up our MediaQueryList
-const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)');
+const defaultTheme: Theme = 'dark';
+const prefersDarkTheme = browser ?? window.matchMedia('(prefers-color-scheme: dark)').matches;
+const hasThemeSet = browser ? 'theme' in window.localStorage : false;
+let initialValue: Theme;
 
-// Initial theme config from current state
+if (browser) {
+	initialValue =
+		(window.localStorage.getItem('theme') as Theme) ||
+		((!hasThemeSet && prefersDarkTheme) ?? defaultTheme);
+} else {
+	initialValue = defaultTheme;
+}
+
+if (browser && initialValue === 'dark') {
+	document.documentElement.classList.add('dark');
+} else {
+	document.documentElement.classList.remove('dark');
+}
+
 const theme = writable<string>(initialValue);
-console.log(theme);
+
 theme.subscribe((theme) => {
 	if (browser) {
 		window.localStorage.setItem('theme', theme);
 	}
 });
+
+export default theme;
