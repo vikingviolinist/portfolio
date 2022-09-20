@@ -1,7 +1,7 @@
 <script context="module" lang="ts">
 	import { createApi } from 'unsplash-js';
 
-	import * as icons from '../icons/index';
+	import * as icons from '../../(routes)/icons/index';
 	import { colors } from './colors';
 
 	const fetchRepos = async () => {
@@ -69,26 +69,24 @@
 </script>
 
 <script lang="ts">
-	import Header from '../../lib/Header.svelte';
+	import Header from '../../../lib/Header.svelte';
 	import Project from './Project.svelte';
-	import type { Project as IProject } from '../../interfaces/Project';
+	import type { Project as IProject } from '../../../interfaces/Project';
 </script>
 
-<section class="min-h-screen px-4 md:px-24 lg:px-36 xl:px-72 py-10 lg:py-12 flex flex-col gap-16">
-	<Header title="Mine Prosjekter" />
-	{#await projects then projects}
-		<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-			{#each projects as project, index (project.name)}
-				<Project {project} delay={index * 100} />
-			{/each}
-		</div>
-	{:catch error}
-		<div class="flex flex-1 justify-center text-white font-bold h-full">
-			<h1>
-				Rate limit exceeded 🧨 <br />
-				Please come back later
-				{error}
-			</h1>
-		</div>
-	{/await}
-</section>
+<Header title="Mine Prosjekter" />
+{#await projects then projects}
+	<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+		{#each projects as project, index (project.name)}
+			<Project {project} delay={index * 100} />
+		{/each}
+	</div>
+{:catch error}
+	<div class="flex flex-1 justify-center text-white font-bold h-full">
+		<h1>
+			Rate limit exceeded 🧨 <br />
+			Please come back later
+			{error}
+		</h1>
+	</div>
+{/await}

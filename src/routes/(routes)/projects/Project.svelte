@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { fly } from 'svelte/transition';
-	import Button from '../../lib/Button.svelte';
-	import type { Project } from '../../interfaces/Project';
+	import Button from '../../../lib/Button.svelte';
+	import type { Project } from '../../../interfaces/Project';
 
 	export let delay: number = 100;
 	export let project: Project;

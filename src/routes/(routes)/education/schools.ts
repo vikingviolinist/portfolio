@@ -1,4 +1,4 @@
-import type { TimelineItem } from '../../interfaces/TimelineItem';
+import type { TimelineItem } from '../../../interfaces/TimelineItem';
 
 export const schools: TimelineItem[] = [
 	{
