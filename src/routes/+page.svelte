@@ -4,12 +4,14 @@
 	import ClefCircuitBoard from '../lib/ClefCircuitBoard.svelte';
 	import LineLeft from '../lib/LineLeft.svelte';
 	import LineRight from '../lib/LineRight.svelte';
+
+	const mql = browser ? window.matchMedia('(max-width: 1024px)') : false;
+	const mobileView = mql.matches;
+
+	const Component = mobileView ? Clef : ClefCircuitBoard;
 </script>
 
-<header
-	class="header  min-h-screen bg-secondary dark:bg-primary overflow-hidden
-        transition-all ease-in-out"
->
+<header class="min-h-screen overflow-hidden transition-all ease-in-out">
 	<div class="header-content grid lg:grid-cols-[800px,1fr] min-h-screen">
 		<div class="left-header relative w-[70%] lg:w-full">
 			<div
@@ -30,15 +32,9 @@
 				class="left-header-right absolute top-0 flex justify-center items-center w-full h-full clip-path-right"
 			>
 				<div class="g-clef g-clef-right w-[20%] lg:w-[40%] z-[3] text-center">
-					{#if browser ? window.screen.availWidth > 1024 : false}
-						<ClefCircuitBoard />
-					{:else}
-						<Clef toggle={false} />
-					{/if}
+					<svelte:component this={Component} toggle={!mobileView} />
 				</div>
-				<div
-					class="g-clef g-clef-right w-[20%] lg:w-[40%] text-center g-clef-right-bg absolute z-[2]"
-				>
+				<div class="g-clef g-clef-right w-[20%] lg:w-[40%] text-center  absolute z-[2]">
 					<Clef toggle={true} />
 				</div>
 
@@ -46,11 +42,11 @@
 					class="lines lines-right flex flex-col gap-4 lg:gap-[6.5rem] absolute w-full left-[40%]"
 				>
 					{#each Array(5) as _, index (index)}
-						<!-- {#if document.screen.availWidth > 1024} -->
-						<LineRight />
-						<!-- {:else} -->
-						<!-- <LineLeft /> -->
-						<!-- {/if} -->
+						{#if !mobileView}
+							<LineRight />
+						{:else}
+							<LineLeft />
+						{/if}
 					{/each}
 				</div>
 			</div>
