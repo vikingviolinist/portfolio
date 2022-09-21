@@ -2,6 +2,7 @@
 	"name": "sveltekit",
 	"version": "0.0.1",
 	"private": true,
+	"prepare": "svelte-kit sync",
 	"scripts": {
 		"start": "vite dev --open",
 		"build": "vite build",
