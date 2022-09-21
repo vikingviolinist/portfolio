@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { fly } from 'svelte/transition';
 	import { browser } from '$app/environment';
 	import Clef from '../lib/Clef.svelte';
 	import ClefCircuitBoard from '../lib/ClefCircuitBoard.svelte';
@@ -9,9 +10,14 @@
 	const mobileView = mql.matches;
 
 	const Component = mobileView ? Clef : ClefCircuitBoard;
+	let clientHeight;
 </script>
 
-<header class="min-h-screen overflow-hidden transition-all ease-in-out">
+<header
+	bind:clientHeight
+	in:fly={{ y: -clientHeight, duration: 1000 }}
+	class="min-h-screen overflow-hidden transition-all ease-in-out"
+>
 	<div class="header-content grid lg:grid-cols-[800px,1fr] min-h-screen">
 		<div class="left-header relative w-[70%] lg:w-full">
 			<div
