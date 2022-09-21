@@ -20,7 +20,8 @@
 			/>
 		{:else}
 			<div
-				class="w-full h-72 object-cover rounded-2xl grayscale-[70%] bg-{project.background}-500"
+				class="w-full h-72 object-cover rounded-2xl grayscale-[70%]"
+				style="background: {project.background}"
 			/>
 		{/if}
 	</div>
