@@ -2,7 +2,7 @@ import type { TimelineItem } from '../../../interfaces/TimelineItem';
 
 export const jobs: TimelineItem[] = [
 	{
-		from: 'Sep 2022',
+		from: 'Oct 2022',
 		to: 'i dag',
 		title: 'Konsulent',
 		institution: 'Noria',
