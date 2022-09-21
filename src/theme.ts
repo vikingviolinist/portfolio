@@ -4,14 +4,11 @@ import { writable } from 'svelte/store';
 let defaultTheme: 'dark' | 'light' = 'dark';
 
 if (browser) {
-	if (
+	defaultTheme =
 		localStorage.theme === 'dark' ||
 		(!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
-	) {
-		defaultTheme = 'dark';
-	} else {
-		defaultTheme = 'light';
-	}
+			? 'dark'
+			: 'light';
 }
 
 const theme = writable<string>(defaultTheme);
