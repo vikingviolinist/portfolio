@@ -34,6 +34,12 @@
 	}
 }
 
+@layer components {
+	.outline {
+		@apply border-none outline-2 outline-transparent focus-visible:outline-primary dark:focus-visible:outline-secondary;
+	}
+}
+
 @layer utilities {
 	.clip-path-left {
 		clip-path: polygon(0 0, 40% 0, 66% 100%, 0% 120%);

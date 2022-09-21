@@ -81,9 +81,9 @@
 						<a
 							href="./Michal_Petrik.pdf"
 							download
-							class="main-btn z-0 relative rounded-[30px] font-semibold border border-primary dark:border-secondary flex items-center overflow-hidden
-                before:absolute before:-z-[1] before:w-full before:h-full before:translate-x-full before:transition-all before:duration-500 before:ease-in-out
-                group hover:before:bg-primary dark:hover:before:bg-secondary hover:before:translate-x-0"
+							class="outline z-0 relative rounded-[30px] font-semibold border-2 border-solid border-primary dark:border-secondary flex items-center overflow-hidden
+                					before:absolute before:-z-[1] before:w-full before:h-full before:translate-x-full before:transition-all before:duration-500 before:ease-in-out
+                					group hover:before:bg-primary dark:hover:before:bg-secondary hover:before:translate-x-0"
 						>
 							<span
 								class="btn-text text-sm lg:text-lg px-4 lg:px-8 text-primary dark:text-secondary group-hover:text-white

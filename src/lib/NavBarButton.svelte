@@ -11,7 +11,7 @@
 <a
 	data-sveltekit-prefetch
 	href={section.route}
-	class="control p-6 cursor-pointer w-10 lg:w-12 h-10 lg:h-12 rounded-3xl hover:bg-secondary hover:rounded-xl
+	class="outline cursor-pointer w-10 lg:w-12 h-10 lg:h-12 rounded-3xl hover:bg-secondary hover:rounded-xl
   transition-all duration-300 ease-linear group flex justify-center items-center
   shadow-[0_3px_15px_rgba(0,0,0,0.3);] {currentPath === section.route
 		? 'bg-secondary'

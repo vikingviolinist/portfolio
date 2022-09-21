@@ -38,31 +38,14 @@
 			</div>
 		</div>
 		<div class="flex-[3]">
-			<form action="" class="flex flex-col gap-3">
-				<input
-					class="w-full rounded-3xl px-5 py-3 bg-gray-5 text-white"
-					type="text"
-					required
-					placeholder="Your name"
-				/>
-				<input
-					class="w-full rounded-3xl px-5 py-3 bg-gray-5 text-white"
-					type="text"
-					required
-					placeholder="Your email"
-				/>
-				<input
-					class="w-full rounded-3xl px-5 py-3 bg-gray-5 text-white"
-					type="text"
-					required
-					placeholder="Enter subject"
-				/>
-				<textarea
-					class="w-full rounded-3xl bg-gray-5 px-5 py-3 resize-none"
-					cols="15"
-					rows="10"
-					placeholder="Message here..."
-				/>
+			<form
+				class="flex flex-col gap-3 text-white [&>*]:bg-white dark:[&>*]:bg-gray-5 [&>*]:w-full [&>*]:rounded-2xl [&>*]:px-5 [&>*]:py-3
+				[&>*]:outline [&>*]:shadow-lg"
+			>
+				<input type="text" required placeholder="Your name" />
+				<input type="text" required placeholder="Your email" />
+				<input type="text" required placeholder="Enter subject" />
+				<textarea class="resize-none" cols="15" rows="10" placeholder="Message here..." />
 			</form>
 		</div>
 	</div>
