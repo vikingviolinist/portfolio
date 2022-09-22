@@ -40,10 +40,6 @@
 		const repos = await fetchRepos();
 		const images = await fetchImages(repos.length);
 
-		if (images instanceof Array && images[0].path && repos.length !== images.length) {
-			return console.log('this should not happen');
-		}
-
 		const projects = repos.map(
 			(repo, index: number): IProject => ({
 				name: repo.name.replaceAll('_', ' '),
@@ -72,21 +68,36 @@
 	import Header from '../../../lib/Header.svelte';
 	import Project from './Project.svelte';
 	import type { Project as IProject } from '../../../interfaces/Project';
+
+	$: searchValue = '';
 </script>
 
 <Header title="Mine Prosjekter" />
+<input
+	bind:value={searchValue}
+	type="text"
+	name="filter"
+	class="outline text-lg font-bold max-w-3xl w-full self-center shadow-lg bg-white dark:bg-gray-5 rounded-2xl p-5 dark:text-white text-primary"
+	placeholder="Search for technology"
+/>
 {#await projects then projects}
 	<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 xl-grid-cols-4 gap-6">
-		{#each projects as project, index (project.name)}
+		{#each projects.filter( (project) => (searchValue ? project.icons.some( (icon) => icon.component.name
+									.toLowerCase()
+									.slice(6)
+									.startsWith(searchValue.trim()) ) : true) ) as project, index (project.name)}
 			<Project {project} delay={index * 100} />
+		{:else}
+			<div class="col-span-full text-center font-bold text-white">
+				<h1>Ingen treff på</h1>
+				<p class="my-4 font-extrabold text-red-600 text-xl">{searchValue}</p>
+				<h1>Prøv noe annet</h1>
+			</div>
 		{/each}
 	</div>
-{:catch error}
-	<div class="flex flex-1 justify-center text-white font-bold h-full">
-		<h1>
-			Rate limit exceeded 🧨 <br />
-			Please come back later
-			{error}
-		</h1>
+{:catch}
+	<div class="col-span-full text-center font-bold text-white">
+		<h1>Rate limit exceeded 🧨</h1>
+		<h1>Please come back later</h1>
 	</div>
 {/await}
