@@ -13,7 +13,7 @@ try {
 		}));
 	fs.writeFile('data/repos.json', JSON.stringify(repos, null, 2), (error) => {
 		if (error) throw new Error(error);
-		console.log('Wrote repos into data/repos.json');
+		console.log('Fetched repos from GitHub and updated data/repos.json file');
 	});
 } catch (error) {
 	console.log(`Error fetching GitHub repos: ${error}`);
