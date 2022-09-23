@@ -13,4 +13,4 @@ package-lock.json
 yarn.lock
 
 # Ignore json file fetched by pre-push hook
-data/repos.json
+src/data/repos.json
