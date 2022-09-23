@@ -4,7 +4,14 @@ export interface Project {
 	topics: string[];
 	homepage: string;
 	repoLink: string;
-	path: string;
+	urls: {
+		raw: string;
+		full: string;
+		regular: string;
+		small: string;
+		thumb: string;
+		small_s: string;
+	};
 	background: string;
 	icons: [];
 }
