@@ -35,6 +35,7 @@
 	import type { Project as IProject } from '../../../interfaces/Project';
 
 	$: searchValue = '';
+	projects.then((res) => console.log(res));
 </script>
 
 <Header title="Mine Prosjekter" />
