@@ -6,7 +6,7 @@ try {
 		.filter(({ topics }) => topics.includes('portfolio'))
 		.map((repo) => ({
 			name: repo.name.replaceAll('_', ' '),
-			description: repo.description,
+			description: repo.description || '',
 			topics: repo.topics.filter((topic) => topic !== 'portfolio'),
 			homepage: repo.homepage,
 			html_url: repo.html_url

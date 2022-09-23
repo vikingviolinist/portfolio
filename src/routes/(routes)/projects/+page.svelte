@@ -9,12 +9,13 @@
 
 		const projects = repos.map(
 			(repo, index: number): IProject => ({
-				name: repo.name.replaceAll('_', ' '),
-				description: repo.description || '',
+				name: repo.name,
+				description: repo.description,
 				homepage: repo.homepage,
 				repoLink: repo.html_url,
 				path: images[index].path,
 				background: images[index].background,
+				topics: repo.topics,
 				icons: repo.topics
 					.filter((icon) => icons[icon.charAt(0).toUpperCase() + icon.slice(1)])
 					.map((icon) => ({
@@ -48,12 +49,11 @@
 />
 {#await projects then projects}
 	<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 xl-grid-cols-4 gap-6">
-		{#each projects.filter( (project) => (searchValue ? project.icons.some( (icon) => icon.component.name
-									.toLowerCase()
-									.slice(6)
-									.startsWith(searchValue
-											.trim()
-											.toLowerCase()) ) : true) ) as project, index (project.name)}
+		{#each projects.filter((project) => (searchValue ? project.topics.some((topic) => topic
+							.toLowerCase()
+							.startsWith(searchValue
+									.trim()
+									.toLowerCase())) : true)) as project, index (project.name)}
 			<Project {project} delay={index * 100} />
 		{:else}
 			<div class="col-span-full text-center font-bold text-white">
