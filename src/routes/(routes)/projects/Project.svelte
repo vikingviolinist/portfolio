@@ -9,7 +9,7 @@
 
 <div in:fly={{ x: -1000, delay, duration: 1000 }} class="relative group text-white">
 	<div class="relative flex justify-center items-center">
-		<div class="absolute top-10 text-xl font-bold z-10 text-center">
+		<div class="absolute top-10 text-xl font-bold z-[2] text-center">
 			<h1>{project.name}</h1>
 		</div>
 		{#if project.path}
