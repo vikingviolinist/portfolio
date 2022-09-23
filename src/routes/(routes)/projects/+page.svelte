@@ -1,35 +1,21 @@
-<script context="module" lang="ts">
-	import { fetchImages } from './fetchImages';
-	import repos from '../../../data/repos.json';
-
-	import * as icons from '../../(routes)/icons/index';
-
-	const loadProjects = async () => {
-		const images = await fetchImages(repos.length);
-
-		const projects = repos.map(
-			(repo, index: number): IProject => ({
-				...repo,
-				path: images[index].path,
-				background: images[index].background,
-				icons: repo.topics
-					.filter((icon) => icons[icon.charAt(0).toUpperCase() + icon.slice(1)])
-					.map((icon) => ({
-						component: icons[icon.charAt(0).toUpperCase() + icon.slice(1)]
-					}))
-			})
-		);
-
-		return projects;
-	};
-
-	let projects = loadProjects();
-</script>
-
 <script lang="ts">
 	import Header from '../../../lib/Header.svelte';
 	import Project from './Project.svelte';
 	import type { Project as IProject } from '../../../interfaces/Project';
+	import repos from '../../../data/repos.json';
+
+	import * as icons from '../../(routes)/icons/index';
+
+	const projects = repos.map(
+		(repo): IProject => ({
+			...repo,
+			icons: repo.topics
+				.filter((icon) => icons[icon.charAt(0).toUpperCase() + icon.slice(1)])
+				.map((icon) => ({
+					component: icons[icon.charAt(0).toUpperCase() + icon.slice(1)]
+				}))
+		})
+	);
 
 	$: searchValue = '';
 </script>

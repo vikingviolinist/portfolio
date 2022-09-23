@@ -1,20 +1,25 @@
 import fs from 'fs';
 
-try {
-	const res = await fetch('https://api.github.com/users/vikingviolinist/repos?per_page=60');
-	const repos = (await res.json())
-		.filter(({ topics }) => topics.includes('portfolio'))
-		.map((repo) => ({
-			name: repo.name.replaceAll('_', ' '),
-			description: repo.description || '',
-			topics: repo.topics.filter((topic) => topic !== 'portfolio'),
-			homepage: repo.homepage,
-			repoLink: repo.html_url
-		}));
-	fs.writeFile('src/data/repos.json', JSON.stringify(repos, null, 2), (error) => {
-		if (error) throw new Error(error);
-		console.log('Fetched repos from GitHub and updated src/data/repos.json file');
-	});
-} catch (error) {
-	console.log(`Error fetching GitHub repos: ${error}`);
+import { fetchImages } from './fetchImages.js';
+import { fetchRepos } from './fetchRepos.js';
+
+const repos = await fetchRepos();
+const images = await fetchImages(50);
+
+if (images.length < repos.length) {
+	throw new Error(`There is less images(${images.length}) than repos(${repos.length})`);
 }
+
+const projects = repos.map((repo, index) => ({
+	name: repo.name.replaceAll('_', ' '),
+	description: repo.description || '',
+	topics: repo.topics.filter((topic) => topic !== 'portfolio'),
+	homepage: repo.homepage,
+	repoLink: repo.html_url,
+	urls: images[index].urls
+}));
+
+fs.writeFile('src/data/repos.json', JSON.stringify(projects, null, 2), (error) => {
+	if (error) throw new Error(error);
+	console.log('Fetched repos from GitHub and updated src/data/repos.json file');
+});

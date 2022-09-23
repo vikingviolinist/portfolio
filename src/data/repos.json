@@ -9,7 +9,15 @@
       "typescript"
     ],
     "homepage": "",
-    "html_url": "https://github.com/vikingviolinist/Appointment_booking"
+    "repoLink": "https://github.com/vikingviolinist/Appointment_booking",
+    "urls": {
+      "raw": "https://images.unsplash.com/photo-1638029202288-451a89e0d55f?ixid=MnwzNjI5MDN8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM5NjIxMDc&ixlib=rb-1.2.1",
+      "full": "https://images.unsplash.com/photo-1638029202288-451a89e0d55f?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzNjI5MDN8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM5NjIxMDc&ixlib=rb-1.2.1&q=80",
+      "regular": "https://images.unsplash.com/photo-1638029202288-451a89e0d55f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjI5MDN8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM5NjIxMDc&ixlib=rb-1.2.1&q=80&w=1080",
+      "small": "https://images.unsplash.com/photo-1638029202288-451a89e0d55f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjI5MDN8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM5NjIxMDc&ixlib=rb-1.2.1&q=80&w=400",
+      "thumb": "https://images.unsplash.com/photo-1638029202288-451a89e0d55f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjI5MDN8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM5NjIxMDc&ixlib=rb-1.2.1&q=80&w=200",
+      "small_s3": "https://s3.us-west-2.amazonaws.com/images.unsplash.com/small/photo-1638029202288-451a89e0d55f"
+    }
   },
   {
     "name": "Chat app",
@@ -20,7 +28,15 @@
       "javascript"
     ],
     "homepage": "",
-    "html_url": "https://github.com/vikingviolinist/Chat_app"
+    "repoLink": "https://github.com/vikingviolinist/Chat_app",
+    "urls": {
+      "raw": "https://images.unsplash.com/photo-1561494653-744c43aed0c1?ixid=MnwzNjI5MDN8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM5NjIxMDc&ixlib=rb-1.2.1",
+      "full": "https://images.unsplash.com/photo-1561494653-744c43aed0c1?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzNjI5MDN8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM5NjIxMDc&ixlib=rb-1.2.1&q=80",
+      "regular": "https://images.unsplash.com/photo-1561494653-744c43aed0c1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjI5MDN8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM5NjIxMDc&ixlib=rb-1.2.1&q=80&w=1080",
+      "small": "https://images.unsplash.com/photo-1561494653-744c43aed0c1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjI5MDN8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM5NjIxMDc&ixlib=rb-1.2.1&q=80&w=400",
+      "thumb": "https://images.unsplash.com/photo-1561494653-744c43aed0c1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjI5MDN8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM5NjIxMDc&ixlib=rb-1.2.1&q=80&w=200",
+      "small_s3": "https://s3.us-west-2.amazonaws.com/images.unsplash.com/small/photo-1561494653-744c43aed0c1"
+    }
   },
   {
     "name": "Country search",
@@ -32,7 +48,15 @@
       "react"
     ],
     "homepage": "",
-    "html_url": "https://github.com/vikingviolinist/Country_search"
+    "repoLink": "https://github.com/vikingviolinist/Country_search",
+    "urls": {
+      "raw": "https://images.unsplash.com/photo-1656680715953-75d4bbcbb839?ixid=MnwzNjI5MDN8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM5NjIxMDc&ixlib=rb-1.2.1",
+      "full": "https://images.unsplash.com/photo-1656680715953-75d4bbcbb839?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzNjI5MDN8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM5NjIxMDc&ixlib=rb-1.2.1&q=80",
+      "regular": "https://images.unsplash.com/photo-1656680715953-75d4bbcbb839?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjI5MDN8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM5NjIxMDc&ixlib=rb-1.2.1&q=80&w=1080",
+      "small": "https://images.unsplash.com/photo-1656680715953-75d4bbcbb839?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjI5MDN8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM5NjIxMDc&ixlib=rb-1.2.1&q=80&w=400",
+      "thumb": "https://images.unsplash.com/photo-1656680715953-75d4bbcbb839?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjI5MDN8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM5NjIxMDc&ixlib=rb-1.2.1&q=80&w=200",
+      "small_s3": "https://s3.us-west-2.amazonaws.com/images.unsplash.com/small/photo-1656680715953-75d4bbcbb839"
+    }
   },
   {
     "name": "Drum kit",
@@ -43,7 +67,15 @@
       "javascript"
     ],
     "homepage": "",
-    "html_url": "https://github.com/vikingviolinist/Drum_kit"
+    "repoLink": "https://github.com/vikingviolinist/Drum_kit",
+    "urls": {
+      "raw": "https://images.unsplash.com/photo-1656680632373-e2aec264296b?ixid=MnwzNjI5MDN8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM5NjIxMDc&ixlib=rb-1.2.1",
+      "full": "https://images.unsplash.com/photo-1656680632373-e2aec264296b?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzNjI5MDN8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM5NjIxMDc&ixlib=rb-1.2.1&q=80",
+      "regular": "https://images.unsplash.com/photo-1656680632373-e2aec264296b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjI5MDN8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM5NjIxMDc&ixlib=rb-1.2.1&q=80&w=1080",
+      "small": "https://images.unsplash.com/photo-1656680632373-e2aec264296b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjI5MDN8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM5NjIxMDc&ixlib=rb-1.2.1&q=80&w=400",
+      "thumb": "https://images.unsplash.com/photo-1656680632373-e2aec264296b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjI5MDN8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM5NjIxMDc&ixlib=rb-1.2.1&q=80&w=200",
+      "small_s3": "https://s3.us-west-2.amazonaws.com/images.unsplash.com/small/photo-1656680632373-e2aec264296b"
+    }
   },
   {
     "name": "EPG",
@@ -58,7 +90,15 @@
       "react"
     ],
     "homepage": "",
-    "html_url": "https://github.com/vikingviolinist/EPG"
+    "repoLink": "https://github.com/vikingviolinist/EPG",
+    "urls": {
+      "raw": "https://images.unsplash.com/photo-1630442923896-244dd3717b35?ixid=MnwzNjI5MDN8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM5NjIxMDc&ixlib=rb-1.2.1",
+      "full": "https://images.unsplash.com/photo-1630442923896-244dd3717b35?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzNjI5MDN8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM5NjIxMDc&ixlib=rb-1.2.1&q=80",
+      "regular": "https://images.unsplash.com/photo-1630442923896-244dd3717b35?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjI5MDN8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM5NjIxMDc&ixlib=rb-1.2.1&q=80&w=1080",
+      "small": "https://images.unsplash.com/photo-1630442923896-244dd3717b35?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjI5MDN8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM5NjIxMDc&ixlib=rb-1.2.1&q=80&w=400",
+      "thumb": "https://images.unsplash.com/photo-1630442923896-244dd3717b35?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjI5MDN8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM5NjIxMDc&ixlib=rb-1.2.1&q=80&w=200",
+      "small_s3": "https://s3.us-west-2.amazonaws.com/images.unsplash.com/small/photo-1630442923896-244dd3717b35"
+    }
   },
   {
     "name": "Goals",
@@ -68,7 +108,15 @@
       "mongodb"
     ],
     "homepage": "",
-    "html_url": "https://github.com/vikingviolinist/Goals"
+    "repoLink": "https://github.com/vikingviolinist/Goals",
+    "urls": {
+      "raw": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixid=MnwzNjI5MDN8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM5NjIxMDc&ixlib=rb-1.2.1",
+      "full": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzNjI5MDN8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM5NjIxMDc&ixlib=rb-1.2.1&q=80",
+      "regular": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjI5MDN8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM5NjIxMDc&ixlib=rb-1.2.1&q=80&w=1080",
+      "small": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjI5MDN8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM5NjIxMDc&ixlib=rb-1.2.1&q=80&w=400",
+      "thumb": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjI5MDN8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM5NjIxMDc&ixlib=rb-1.2.1&q=80&w=200",
+      "small_s3": "https://s3.us-west-2.amazonaws.com/images.unsplash.com/small/photo-1517694712202-14dd9538aa97"
+    }
   },
   {
     "name": "keyprez",
@@ -86,7 +134,15 @@
       "vite"
     ],
     "homepage": "https://keyprez.com",
-    "html_url": "https://github.com/vikingviolinist/keyprez"
+    "repoLink": "https://github.com/vikingviolinist/keyprez",
+    "urls": {
+      "raw": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?ixid=MnwzNjI5MDN8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM5NjIxMDc&ixlib=rb-1.2.1",
+      "full": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzNjI5MDN8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM5NjIxMDc&ixlib=rb-1.2.1&q=80",
+      "regular": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjI5MDN8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM5NjIxMDc&ixlib=rb-1.2.1&q=80&w=1080",
+      "small": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjI5MDN8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM5NjIxMDc&ixlib=rb-1.2.1&q=80&w=400",
+      "thumb": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjI5MDN8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM5NjIxMDc&ixlib=rb-1.2.1&q=80&w=200",
+      "small_s3": "https://s3.us-west-2.amazonaws.com/images.unsplash.com/small/photo-1517336714731-489689fd1ca8"
+    }
   },
   {
     "name": "Leaderboard",
@@ -95,7 +151,15 @@
       "go"
     ],
     "homepage": "",
-    "html_url": "https://github.com/vikingviolinist/Leaderboard"
+    "repoLink": "https://github.com/vikingviolinist/Leaderboard",
+    "urls": {
+      "raw": "https://images.unsplash.com/photo-1618171889969-0feeb769fe78?ixid=MnwzNjI5MDN8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM5NjIxMDc&ixlib=rb-1.2.1",
+      "full": "https://images.unsplash.com/photo-1618171889969-0feeb769fe78?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzNjI5MDN8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM5NjIxMDc&ixlib=rb-1.2.1&q=80",
+      "regular": "https://images.unsplash.com/photo-1618171889969-0feeb769fe78?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjI5MDN8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM5NjIxMDc&ixlib=rb-1.2.1&q=80&w=1080",
+      "small": "https://images.unsplash.com/photo-1618171889969-0feeb769fe78?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjI5MDN8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM5NjIxMDc&ixlib=rb-1.2.1&q=80&w=400",
+      "thumb": "https://images.unsplash.com/photo-1618171889969-0feeb769fe78?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjI5MDN8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM5NjIxMDc&ixlib=rb-1.2.1&q=80&w=200",
+      "small_s3": "https://s3.us-west-2.amazonaws.com/images.unsplash.com/small/photo-1618171889969-0feeb769fe78"
+    }
   },
   {
     "name": "Pet adoption app",
@@ -112,7 +176,15 @@
       "typescript"
     ],
     "homepage": "",
-    "html_url": "https://github.com/vikingviolinist/Pet_adoption_app"
+    "repoLink": "https://github.com/vikingviolinist/Pet_adoption_app",
+    "urls": {
+      "raw": "https://images.unsplash.com/photo-1506064764456-2bd1ef6a20f6?ixid=MnwzNjI5MDN8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM5NjIxMDc&ixlib=rb-1.2.1",
+      "full": "https://images.unsplash.com/photo-1506064764456-2bd1ef6a20f6?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzNjI5MDN8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM5NjIxMDc&ixlib=rb-1.2.1&q=80",
+      "regular": "https://images.unsplash.com/photo-1506064764456-2bd1ef6a20f6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjI5MDN8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM5NjIxMDc&ixlib=rb-1.2.1&q=80&w=1080",
+      "small": "https://images.unsplash.com/photo-1506064764456-2bd1ef6a20f6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjI5MDN8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM5NjIxMDc&ixlib=rb-1.2.1&q=80&w=400",
+      "thumb": "https://images.unsplash.com/photo-1506064764456-2bd1ef6a20f6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjI5MDN8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM5NjIxMDc&ixlib=rb-1.2.1&q=80&w=200",
+      "small_s3": "https://s3.us-west-2.amazonaws.com/images.unsplash.com/small/photo-1506064764456-2bd1ef6a20f6"
+    }
   },
   {
     "name": "Rock-Paper-Scissors",
@@ -123,7 +195,15 @@
       "javascript"
     ],
     "homepage": "https://vikingviolinist.github.io/rock_paper_scissors",
-    "html_url": "https://github.com/vikingviolinist/Rock-Paper-Scissors"
+    "repoLink": "https://github.com/vikingviolinist/Rock-Paper-Scissors",
+    "urls": {
+      "raw": "https://images.unsplash.com/photo-1534972195531-d756b9bfa9f2?ixid=MnwzNjI5MDN8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM5NjIxMDc&ixlib=rb-1.2.1",
+      "full": "https://images.unsplash.com/photo-1534972195531-d756b9bfa9f2?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzNjI5MDN8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM5NjIxMDc&ixlib=rb-1.2.1&q=80",
+      "regular": "https://images.unsplash.com/photo-1534972195531-d756b9bfa9f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjI5MDN8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM5NjIxMDc&ixlib=rb-1.2.1&q=80&w=1080",
+      "small": "https://images.unsplash.com/photo-1534972195531-d756b9bfa9f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjI5MDN8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM5NjIxMDc&ixlib=rb-1.2.1&q=80&w=400",
+      "thumb": "https://images.unsplash.com/photo-1534972195531-d756b9bfa9f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjI5MDN8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM5NjIxMDc&ixlib=rb-1.2.1&q=80&w=200",
+      "small_s3": "https://s3.us-west-2.amazonaws.com/images.unsplash.com/small/photo-1534972195531-d756b9bfa9f2"
+    }
   },
   {
     "name": "Social media app",
@@ -134,14 +214,30 @@
       "javascript"
     ],
     "homepage": "",
-    "html_url": "https://github.com/vikingviolinist/Social_media_app"
+    "repoLink": "https://github.com/vikingviolinist/Social_media_app",
+    "urls": {
+      "raw": "https://images.unsplash.com/photo-1617240016072-d92174e44171?ixid=MnwzNjI5MDN8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM5NjIxMDc&ixlib=rb-1.2.1",
+      "full": "https://images.unsplash.com/photo-1617240016072-d92174e44171?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzNjI5MDN8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM5NjIxMDc&ixlib=rb-1.2.1&q=80",
+      "regular": "https://images.unsplash.com/photo-1617240016072-d92174e44171?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjI5MDN8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM5NjIxMDc&ixlib=rb-1.2.1&q=80&w=1080",
+      "small": "https://images.unsplash.com/photo-1617240016072-d92174e44171?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjI5MDN8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM5NjIxMDc&ixlib=rb-1.2.1&q=80&w=400",
+      "thumb": "https://images.unsplash.com/photo-1617240016072-d92174e44171?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjI5MDN8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM5NjIxMDc&ixlib=rb-1.2.1&q=80&w=200",
+      "small_s3": "https://s3.us-west-2.amazonaws.com/images.unsplash.com/small/photo-1617240016072-d92174e44171"
+    }
   },
   {
     "name": "Task manager",
     "description": "",
     "topics": [],
     "homepage": "",
-    "html_url": "https://github.com/vikingviolinist/Task_manager"
+    "repoLink": "https://github.com/vikingviolinist/Task_manager",
+    "urls": {
+      "raw": "https://images.unsplash.com/photo-1558895101-0b9cc10348f1?ixid=MnwzNjI5MDN8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM5NjIxMDc&ixlib=rb-1.2.1",
+      "full": "https://images.unsplash.com/photo-1558895101-0b9cc10348f1?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzNjI5MDN8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM5NjIxMDc&ixlib=rb-1.2.1&q=80",
+      "regular": "https://images.unsplash.com/photo-1558895101-0b9cc10348f1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjI5MDN8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM5NjIxMDc&ixlib=rb-1.2.1&q=80&w=1080",
+      "small": "https://images.unsplash.com/photo-1558895101-0b9cc10348f1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjI5MDN8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM5NjIxMDc&ixlib=rb-1.2.1&q=80&w=400",
+      "thumb": "https://images.unsplash.com/photo-1558895101-0b9cc10348f1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjI5MDN8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM5NjIxMDc&ixlib=rb-1.2.1&q=80&w=200",
+      "small_s3": "https://s3.us-west-2.amazonaws.com/images.unsplash.com/small/photo-1558895101-0b9cc10348f1"
+    }
   },
   {
     "name": "Task tracker",
@@ -153,7 +249,15 @@
       "typescript"
     ],
     "homepage": "",
-    "html_url": "https://github.com/vikingviolinist/Task_tracker"
+    "repoLink": "https://github.com/vikingviolinist/Task_tracker",
+    "urls": {
+      "raw": "https://images.unsplash.com/photo-1649959149294-d0bbf3d4b9d2?ixid=MnwzNjI5MDN8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM5NjIxMDc&ixlib=rb-1.2.1",
+      "full": "https://images.unsplash.com/photo-1649959149294-d0bbf3d4b9d2?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzNjI5MDN8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM5NjIxMDc&ixlib=rb-1.2.1&q=80",
+      "regular": "https://images.unsplash.com/photo-1649959149294-d0bbf3d4b9d2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjI5MDN8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM5NjIxMDc&ixlib=rb-1.2.1&q=80&w=1080",
+      "small": "https://images.unsplash.com/photo-1649959149294-d0bbf3d4b9d2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjI5MDN8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM5NjIxMDc&ixlib=rb-1.2.1&q=80&w=400",
+      "thumb": "https://images.unsplash.com/photo-1649959149294-d0bbf3d4b9d2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjI5MDN8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM5NjIxMDc&ixlib=rb-1.2.1&q=80&w=200",
+      "small_s3": "https://s3.us-west-2.amazonaws.com/images.unsplash.com/small/photo-1649959149294-d0bbf3d4b9d2"
+    }
   },
   {
     "name": "Todo list",
@@ -164,7 +268,15 @@
       "javascript"
     ],
     "homepage": "",
-    "html_url": "https://github.com/vikingviolinist/Todo_list"
+    "repoLink": "https://github.com/vikingviolinist/Todo_list",
+    "urls": {
+      "raw": "https://images.unsplash.com/photo-1654439526726-0f47b552aa8b?ixid=MnwzNjI5MDN8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM5NjIxMDc&ixlib=rb-1.2.1",
+      "full": "https://images.unsplash.com/photo-1654439526726-0f47b552aa8b?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzNjI5MDN8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM5NjIxMDc&ixlib=rb-1.2.1&q=80",
+      "regular": "https://images.unsplash.com/photo-1654439526726-0f47b552aa8b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjI5MDN8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM5NjIxMDc&ixlib=rb-1.2.1&q=80&w=1080",
+      "small": "https://images.unsplash.com/photo-1654439526726-0f47b552aa8b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjI5MDN8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM5NjIxMDc&ixlib=rb-1.2.1&q=80&w=400",
+      "thumb": "https://images.unsplash.com/photo-1654439526726-0f47b552aa8b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjI5MDN8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM5NjIxMDc&ixlib=rb-1.2.1&q=80&w=200",
+      "small_s3": "https://s3.us-west-2.amazonaws.com/images.unsplash.com/small/photo-1654439526726-0f47b552aa8b"
+    }
   },
   {
     "name": "VG clone",
@@ -178,7 +290,15 @@
       "react"
     ],
     "homepage": "",
-    "html_url": "https://github.com/vikingviolinist/VG_clone"
+    "repoLink": "https://github.com/vikingviolinist/VG_clone",
+    "urls": {
+      "raw": "https://images.unsplash.com/photo-1610576660726-1b2704ee0550?ixid=MnwzNjI5MDN8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM5NjIxMDc&ixlib=rb-1.2.1",
+      "full": "https://images.unsplash.com/photo-1610576660726-1b2704ee0550?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzNjI5MDN8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM5NjIxMDc&ixlib=rb-1.2.1&q=80",
+      "regular": "https://images.unsplash.com/photo-1610576660726-1b2704ee0550?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjI5MDN8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM5NjIxMDc&ixlib=rb-1.2.1&q=80&w=1080",
+      "small": "https://images.unsplash.com/photo-1610576660726-1b2704ee0550?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjI5MDN8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM5NjIxMDc&ixlib=rb-1.2.1&q=80&w=400",
+      "thumb": "https://images.unsplash.com/photo-1610576660726-1b2704ee0550?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjI5MDN8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM5NjIxMDc&ixlib=rb-1.2.1&q=80&w=200",
+      "small_s3": "https://s3.us-west-2.amazonaws.com/images.unsplash.com/small/photo-1610576660726-1b2704ee0550"
+    }
   },
   {
     "name": "vikingviolinist.github.io",
@@ -190,7 +310,15 @@
       "javascript"
     ],
     "homepage": "https://vikingviolinist.github.io",
-    "html_url": "https://github.com/vikingviolinist/vikingviolinist.github.io"
+    "repoLink": "https://github.com/vikingviolinist/vikingviolinist.github.io",
+    "urls": {
+      "raw": "https://images.unsplash.com/photo-1605379399843-5870eea9b74e?ixid=MnwzNjI5MDN8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM5NjIxMDc&ixlib=rb-1.2.1",
+      "full": "https://images.unsplash.com/photo-1605379399843-5870eea9b74e?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzNjI5MDN8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM5NjIxMDc&ixlib=rb-1.2.1&q=80",
+      "regular": "https://images.unsplash.com/photo-1605379399843-5870eea9b74e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjI5MDN8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM5NjIxMDc&ixlib=rb-1.2.1&q=80&w=1080",
+      "small": "https://images.unsplash.com/photo-1605379399843-5870eea9b74e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjI5MDN8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM5NjIxMDc&ixlib=rb-1.2.1&q=80&w=400",
+      "thumb": "https://images.unsplash.com/photo-1605379399843-5870eea9b74e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjI5MDN8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM5NjIxMDc&ixlib=rb-1.2.1&q=80&w=200",
+      "small_s3": "https://s3.us-west-2.amazonaws.com/images.unsplash.com/small/photo-1605379399843-5870eea9b74e"
+    }
   },
   {
     "name": "Weather forecast",
@@ -201,6 +329,14 @@
       "prettier"
     ],
     "homepage": "",
-    "html_url": "https://github.com/vikingviolinist/Weather_forecast"
+    "repoLink": "https://github.com/vikingviolinist/Weather_forecast",
+    "urls": {
+      "raw": "https://images.unsplash.com/photo-1587620962725-abab7fe55159?ixid=MnwzNjI5MDN8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM5NjIxMDc&ixlib=rb-1.2.1",
+      "full": "https://images.unsplash.com/photo-1587620962725-abab7fe55159?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzNjI5MDN8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM5NjIxMDc&ixlib=rb-1.2.1&q=80",
+      "regular": "https://images.unsplash.com/photo-1587620962725-abab7fe55159?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjI5MDN8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM5NjIxMDc&ixlib=rb-1.2.1&q=80&w=1080",
+      "small": "https://images.unsplash.com/photo-1587620962725-abab7fe55159?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjI5MDN8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM5NjIxMDc&ixlib=rb-1.2.1&q=80&w=400",
+      "thumb": "https://images.unsplash.com/photo-1587620962725-abab7fe55159?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjI5MDN8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM5NjIxMDc&ixlib=rb-1.2.1&q=80&w=200",
+      "small_s3": "https://s3.us-west-2.amazonaws.com/images.unsplash.com/small/photo-1587620962725-abab7fe55159"
+    }
   }
 ]
