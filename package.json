@@ -13,7 +13,7 @@
 		"lint": "prettier --check . && eslint .",
 		"format": "prettier --write .",
 		"prepare": "husky install",
-		"fetch": "node ./scripts/fetch.js"
+		"fetch": "node ./scripts/fetch.js && git diff --quiet src/data || git add src/data && git commit -m '🗃 Fetch GitHub repos'"
 	},
 	"devDependencies": {
 		"@playwright/test": "^1.25.0",
