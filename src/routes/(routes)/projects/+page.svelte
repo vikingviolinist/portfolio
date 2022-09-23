@@ -53,7 +53,9 @@
 		{#each projects.filter( (project) => (searchValue ? project.icons.some( (icon) => icon.component.name
 									.toLowerCase()
 									.slice(6)
-									.startsWith(searchValue.trim()) ) : true) ) as project, index (project.name)}
+									.startsWith(searchValue
+											.trim()
+											.toLowerCase()) ) : true) ) as project, index (project.name)}
 			<Project {project} delay={index * 100} />
 		{:else}
 			<div class="col-span-full text-center font-bold text-white">
