@@ -3,7 +3,7 @@
 	import Button from '../../../lib/Button.svelte';
 	import type { Project } from '../../../interfaces/Project';
 
-	export let delay: number = 100;
+	export let delay = 100;
 	export let project: Project;
 </script>
 
