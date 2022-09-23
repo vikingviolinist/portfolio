@@ -12,18 +12,11 @@
 		<div class="absolute top-10 text-xl font-bold z-[2] text-center">
 			<h1>{project.name}</h1>
 		</div>
-		{#if project.path}
-			<img
-				class="w-full h-72 object-cover rounded-2xl grayscale-[70%]"
-				src={project.path}
-				alt={project.name}
-			/>
-		{:else}
-			<div
-				class="w-full h-72 object-cover rounded-2xl grayscale-[70%]"
-				style="background: {project.background}"
-			/>
-		{/if}
+		<img
+			class="w-full h-72 object-cover rounded-2xl grayscale-[70%]"
+			src={project.urls.small}
+			alt={project.name}
+		/>
 	</div>
 	<div
 		class="w-full h-full bg-secondary absolute left-0 top-0 
