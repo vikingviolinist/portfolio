@@ -1,8 +1,0 @@
-#!/usr/bin/env sh
-. "$(dirname -- "$0")/_/husky.sh"
-
-npm run lint
-npm run format
-npm run fetch
-
-git diff --quiet src/data || git add src/data || git commit -m '🗃 Fetch GitHub repos'
