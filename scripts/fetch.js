@@ -9,7 +9,7 @@ try {
 			description: repo.description || '',
 			topics: repo.topics.filter((topic) => topic !== 'portfolio'),
 			homepage: repo.homepage,
-			html_url: repo.html_url
+			repoLink: repo.html_url
 		}));
 	fs.writeFile('src/data/repos.json', JSON.stringify(repos, null, 2), (error) => {
 		if (error) throw new Error(error);

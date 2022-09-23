@@ -9,13 +9,9 @@
 
 		const projects = repos.map(
 			(repo, index: number): IProject => ({
-				name: repo.name,
-				description: repo.description,
-				homepage: repo.homepage,
-				repoLink: repo.html_url,
+				...repo,
 				path: images[index].path,
 				background: images[index].background,
-				topics: repo.topics,
 				icons: repo.topics
 					.filter((icon) => icons[icon.charAt(0).toUpperCase() + icon.slice(1)])
 					.map((icon) => ({
