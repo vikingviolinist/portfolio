@@ -5,4 +5,4 @@ npm run lint
 npm run format
 npm run fetch
 
-git diff --quiet && git diff --staged --quiet || git add src/data/repos.json || git commit -m '🗃 Fetch GitHub repos'
+git diff --quiet && git diff --staged --quiet || git add src/data/repos.json && git commit -m '🗃 Fetch GitHub repos'
