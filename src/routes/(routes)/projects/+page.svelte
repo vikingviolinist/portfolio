@@ -17,9 +17,7 @@
 				path: images[index].path,
 				background: images[index].background,
 				icons: repo.topics
-					.filter(
-						(icon) => icon !== 'portfolio' && icons[icon.charAt(0).toUpperCase() + icon.slice(1)]
-					)
+					.filter((icon) => icons[icon.charAt(0).toUpperCase() + icon.slice(1)])
 					.map((icon) => ({
 						component: icons[icon.charAt(0).toUpperCase() + icon.slice(1)]
 					}))
