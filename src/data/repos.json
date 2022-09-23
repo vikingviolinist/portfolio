@@ -1,7 +1,7 @@
 [
   {
     "name": "Appointment booking",
-    "description": null,
+    "description": "",
     "topics": [
       "css",
       "html",
@@ -13,7 +13,7 @@
   },
   {
     "name": "Chat app",
-    "description": null,
+    "description": "",
     "topics": [
       "css",
       "html",
@@ -24,7 +24,7 @@
   },
   {
     "name": "Country search",
-    "description": null,
+    "description": "",
     "topics": [
       "css",
       "html",
@@ -36,7 +36,7 @@
   },
   {
     "name": "Drum kit",
-    "description": null,
+    "description": "",
     "topics": [
       "css",
       "html",
@@ -62,7 +62,7 @@
   },
   {
     "name": "Goals",
-    "description": null,
+    "description": "",
     "topics": [
       "javascript",
       "mongodb"
@@ -72,7 +72,7 @@
   },
   {
     "name": "keyprez",
-    "description": null,
+    "description": "",
     "topics": [
       "eslint",
       "go",
@@ -90,7 +90,7 @@
   },
   {
     "name": "Leaderboard",
-    "description": null,
+    "description": "",
     "topics": [
       "go"
     ],
@@ -99,7 +99,7 @@
   },
   {
     "name": "Pet adoption app",
-    "description": null,
+    "description": "",
     "topics": [
       "babel",
       "eslint",
@@ -116,7 +116,7 @@
   },
   {
     "name": "Rock-Paper-Scissors",
-    "description": null,
+    "description": "",
     "topics": [
       "css",
       "html",
@@ -127,7 +127,7 @@
   },
   {
     "name": "Social media app",
-    "description": null,
+    "description": "",
     "topics": [
       "css",
       "html",
@@ -138,14 +138,14 @@
   },
   {
     "name": "Task manager",
-    "description": null,
+    "description": "",
     "topics": [],
     "homepage": "",
     "html_url": "https://github.com/vikingviolinist/Task_manager"
   },
   {
     "name": "Task tracker",
-    "description": null,
+    "description": "",
     "topics": [
       "angular",
       "css",
@@ -194,7 +194,7 @@
   },
   {
     "name": "Weather forecast",
-    "description": null,
+    "description": "",
     "topics": [
       "express",
       "nodejs",
