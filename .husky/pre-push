@@ -6,4 +6,5 @@ npm run format
 npm run fetch
 git add .
 git commit -m '🗃 Fetch GitHub repos'
+git pull origin main
 
