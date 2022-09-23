@@ -7,5 +7,5 @@ export const fetchRepos = async () => {
 		repos = [];
 	}
 
-	return repos.filter((repo: any) => repo.topics.includes('portfolio'));
+	return repos.filter((repo) => repo.topics.includes('portfolio'));
 };
