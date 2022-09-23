@@ -1,40 +1,8 @@
 <script context="module" lang="ts">
-	import { createApi } from 'unsplash-js';
+	import { fetchImages } from './fetchImages';
+	import { fetchRepos } from './fetchRepos';
 
 	import * as icons from '../../(routes)/icons/index';
-	import { colors } from './colors';
-
-	const fetchRepos = async () => {
-		let repos;
-		try {
-			const res = await fetch('https://api.github.com/users/vikingviolinist/repos?per_page=60');
-			repos = await res.json();
-		} catch (error) {
-			repos = [];
-		}
-
-		return repos.filter((repo: any) => repo.topics.includes('portfolio'));
-	};
-
-	const fetchImages = async (count: number) => {
-		const accessKey = '2jacHDYybwpIjozi70jBxq_FdkhUhap37l99qairwI0';
-		const unsplash = createApi({ accessKey });
-		let images = colors.map((background) => ({ path: '', background }));
-
-		try {
-			const res = await unsplash.photos.getRandom({
-				collectionIds: ['7P0uGtLS0rY'],
-				count
-			});
-
-			images = await res.response;
-			if (images && images instanceof Array) {
-				images = images.map((image) => ({ path: image.urls.small, background: '' }));
-			}
-		} catch (error) {}
-
-		return images;
-	};
 
 	const loadProjects = async () => {
 		const repos = await fetchRepos();
