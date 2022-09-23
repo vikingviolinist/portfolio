@@ -16,7 +16,9 @@ export const fetchImages = async (count: number) => {
 		if (images && images instanceof Array) {
 			images = images.map((image) => ({ path: image.urls.small, background: '' }));
 		}
-	} catch (error) {}
+	} catch (error) {
+		console.log('Failed fetching images');
+	}
 
 	return images;
 };

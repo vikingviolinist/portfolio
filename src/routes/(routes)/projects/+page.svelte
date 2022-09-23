@@ -1,11 +1,10 @@
 <script context="module" lang="ts">
 	import { fetchImages } from './fetchImages';
-	import { fetchRepos } from './fetchRepos';
+	import repos from '../../../data/repos.json';
 
 	import * as icons from '../../(routes)/icons/index';
 
 	const loadProjects = async () => {
-		const repos = await fetchRepos();
 		const images = await fetchImages(repos.length);
 
 		const projects = repos.map(
@@ -17,9 +16,7 @@
 				path: images[index].path,
 				background: images[index].background,
 				icons: repo.topics
-					.filter(
-						(icon) => icon !== 'portfolio' && icons[icon.charAt(0).toUpperCase() + icon.slice(1)]
-					)
+					.filter((icon) => icons[icon.charAt(0).toUpperCase() + icon.slice(1)])
 					.map((icon) => ({
 						component: icons[icon.charAt(0).toUpperCase() + icon.slice(1)]
 					}))
