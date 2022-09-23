@@ -6,4 +6,3 @@ npm run format
 npm run fetch
 git add .
 git diff --quiet && git diff --staged --quiet || git commit -am '🗃 Fetch GitHub repos'
-
