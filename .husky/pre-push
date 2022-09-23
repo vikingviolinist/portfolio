@@ -5,6 +5,5 @@ npm run lint
 npm run format
 npm run fetch
 git add .
-git commit -m '🗃 Fetch GitHub repos'
-# git pull origin main
+git diff --quiet && git diff --staged --quiet || git commit -am '🗃 Fetch GitHub repos'
 
