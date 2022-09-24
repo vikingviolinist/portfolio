@@ -10,7 +10,10 @@
 	href={link}
 	target="_blank"
 >
-	<i
-		class="{icon} text-gray-2 dark:text-gray-400 group-hover:text-white flex items-center justify-center text-xl"
-	/>
+	<slot />
+	{#if icon}
+		<i
+			class="{icon} text-gray-2 dark:text-gray-400 group-hover:text-white flex items-center justify-center text-xl"
+		/>
+	{/if}
 </a>

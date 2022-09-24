@@ -38,6 +38,9 @@
 					link="https://www.linkedin.com/in/michal-petrik-503b14129/"
 				/>
 				<Button icon="fab fa-github" link="https://github.com/vikingviolinist" />
+				<Button icon="" link="https://frontendmasters.com/u/vikingviolinist/">
+					<img class="w-6" src={'./frontendmasters_gray.png'} alt="Frontend Masters" />
+				</Button>
 			</div>
 		</div>
 		<div class="flex-[3]">
