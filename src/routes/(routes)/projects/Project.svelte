@@ -33,7 +33,7 @@
 			{/if}
 			<Button icon="fab fa-github" link={project.repoLink} />
 		</div>
-		<div class="absolute flex justify-start flex-wrap gap-2 w-full p-1 bottom-0">
+		<div class="absolute flex justify-center flex-wrap gap-2 w-full p-1 bottom-0">
 			{#each project.icons as icon}
 				<span class="w-8">
 					<svelte:component this={icon.component} />

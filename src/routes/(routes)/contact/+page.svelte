@@ -1,6 +1,10 @@
 <script lang="ts">
 	import Header from '../../../lib/Header.svelte';
 	import Button from '../../../lib/Button.svelte';
+
+	let src = './frontendmasters_gray.png';
+	const onMouseEnter = () => (src = './frontendmasters_white.png');
+	const onMouseLeave = () => (src = './frontendmasters_gray.png');
 </script>
 
 <Header title="Kontakt" />
@@ -32,20 +36,26 @@
 					</p>
 				</div>
 			</div>
-			<div class="flex mt-8">
+			<div class="flex mt-8 justify-center">
 				<Button
 					icon="fab fa-linkedin"
 					link="https://www.linkedin.com/in/michal-petrik-503b14129/"
 				/>
 				<Button icon="fab fa-github" link="https://github.com/vikingviolinist" />
-				<Button icon="" link="https://frontendmasters.com/u/vikingviolinist/">
-					<img class="w-6" src={'./frontendmasters_gray.png'} alt="Frontend Masters" />
+				<Button
+					on:mouseenter={onMouseEnter}
+					on:focus={onMouseEnter}
+					on:mouseleave={onMouseLeave}
+					on:focusout={onMouseLeave}
+					link="https://frontendmasters.com/u/vikingviolinist/"
+				>
+					<img {src} class="w-6" id="img" alt="Frontend Masters" />
 				</Button>
 			</div>
 		</div>
 		<div class="flex-[3]">
 			<form
-				class="flex flex-col gap-3 text-white [&>*]:bg-white dark:[&>*]:bg-gray-5 [&>*]:w-full [&>*]:rounded-2xl [&>*]:px-5 [&>*]:py-3
+				class="flex flex-col gap-3 dark:text-white [&>*]:bg-white dark:[&>*]:bg-gray-5 [&>*]:w-full [&>*]:rounded-2xl [&>*]:px-5 [&>*]:py-3
 				[&>*]:outline [&>*]:shadow-lg"
 			>
 				<input type="text" required placeholder="Your name" />

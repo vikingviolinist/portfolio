@@ -18,7 +18,7 @@
 		: 'bg-gray-4'}"
 >
 	<i
-		class="fas fa-{section.icon} text-xl pointer-events-none group-hover:text-white
+		class="fas fa-{section.icon} text-xl pointer-events-none group-hover:text-white group-focus:text-white
         {currentPath === section.route ? 'text-white' : 'text-gray-2 dark:text-gray-400'}"
 	/>
 	<Tooltip position="right-14" origin="right" tooltip={section.tooltip} />
