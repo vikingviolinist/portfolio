@@ -33,7 +33,10 @@
 				</div>
 			</div>
 			<div class="flex mt-8">
-				<Button icon="fab fa-linkedin" link="https://github.com/vikingviolinist" />
+				<Button
+					icon="fab fa-linkedin"
+					link="https://www.linkedin.com/in/michal-petrik-503b14129/"
+				/>
 				<Button icon="fab fa-github" link="https://github.com/vikingviolinist" />
 			</div>
 		</div>
