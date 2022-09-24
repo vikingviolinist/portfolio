@@ -15,3 +15,6 @@ yarn.lock
 
 # Ignore json file fetched by pre-push hook
 src/data/repos.json
+
+# Ignore fontawesome minified files
+/static/fontawesome
