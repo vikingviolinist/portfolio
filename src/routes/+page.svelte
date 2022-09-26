@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { visited } from '../stores/visited';
+	import { onDestroy } from 'svelte';
 	import { fly } from 'svelte/transition';
 	import { browser } from '$app/environment';
 	import Clef from '../lib/Clef.svelte';
@@ -10,12 +12,24 @@
 	const mobileView = mql.matches;
 
 	const Component = mobileView ? Clef : ClefCircuitBoard;
+
+	let shouldAnimate: boolean;
+
+	const unsubscribe = visited.subscribe((obj) => {
+		shouldAnimate = !obj.home;
+	});
+
+	onDestroy(() => {
+		visited.update((obj) => ({ ...obj, home: true }));
+		unsubscribe();
+	});
+
 	let clientHeight;
 </script>
 
 <header
 	bind:clientHeight
-	in:fly={{ y: -clientHeight, duration: 1000 }}
+	in:fly={{ y: -clientHeight, duration: shouldAnimate ? 1000 : 0 }}
 	class="min-h-screen overflow-hidden transition-all ease-in-out"
 >
 	<div class="header-content grid lg:grid-cols-[800px,1fr] min-h-screen">
