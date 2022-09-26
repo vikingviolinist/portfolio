@@ -28,25 +28,18 @@
 	class="outline text-lg font-bold max-w-3xl w-full self-center shadow-lg bg-white dark:bg-gray-5 rounded-2xl p-5 dark:text-white text-primary"
 	placeholder="Search for technology"
 />
-{#await projects then projects}
-	<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 xl-grid-cols-4 gap-6">
-		{#each projects.filter((project) => (searchValue ? project.topics.some((topic) => topic
-							.toLowerCase()
-							.startsWith(searchValue
-									.trim()
-									.toLowerCase())) : true)) as project, index (project.name)}
-			<Project {project} delay={index * 100} />
-		{:else}
-			<div class="col-span-full text-center font-bold text-white">
-				<h1>Ingen treff på</h1>
-				<p class="my-4 font-extrabold text-red-600 text-xl">{searchValue}</p>
-				<h1>Prøv noe annet</h1>
-			</div>
-		{/each}
-	</div>
-{:catch}
-	<div class="col-span-full text-center font-bold text-white">
-		<h1>Rate limit exceeded 🧨</h1>
-		<h1>Please come back later</h1>
-	</div>
-{/await}
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 xl-grid-cols-4 gap-6">
+	{#each projects.filter((project) => (searchValue ? project.topics.some((topic) => topic
+						.toLowerCase()
+						.startsWith(searchValue
+								.trim()
+								.toLowerCase())) : true)) as project, index (project.name)}
+		<Project {project} delay={index * 100} />
+	{:else}
+		<div class="col-span-full text-center font-bold text-white">
+			<h1>Ingen treff på</h1>
+			<p class="my-4 font-extrabold text-red-600 text-xl">{searchValue}</p>
+			<h1>Prøv noe annet</h1>
+		</div>
+	{/each}
+</div>
