@@ -1,5 +1,5 @@
 <script lang="ts">
-	import theme from '../theme';
+	import theme from '../stores/theme';
 
 	const toggleTheme = () => theme.set($theme === 'dark' ? 'light' : 'dark');
 </script>

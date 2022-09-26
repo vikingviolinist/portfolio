@@ -1,10 +1,23 @@
 <script lang="ts">
+	import { visited } from '../../../stores/visited';
+	import { onDestroy } from 'svelte';
 	import Header from '../../../lib/Header.svelte';
 	import Project from './Project.svelte';
 	import type { Project as IProject } from '../../../interfaces/Project';
 	import repos from '../../../data/repos.json';
 
 	import * as icons from '../../(routes)/icons/index';
+
+	let shouldAnimate: boolean;
+
+	const unsubscribe = visited.subscribe((obj) => {
+		shouldAnimate = !obj.projects;
+	});
+
+	onDestroy(() => {
+		visited.update((obj) => ({ ...obj, projects: true }));
+		unsubscribe();
+	});
 
 	const projects = repos.map(
 		(repo): IProject => ({
@@ -34,7 +47,7 @@
 						.startsWith(searchValue
 								.trim()
 								.toLowerCase())) : true)) as project, index (project.name)}
-		<Project {project} delay={index * 100} />
+		<Project {project} delay={index * 100} {shouldAnimate} />
 	{:else}
 		<div class="col-span-full text-center font-bold text-white">
 			<h1>Ingen treff på</h1>

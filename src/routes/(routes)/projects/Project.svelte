@@ -7,6 +7,7 @@
 
 	export let delay = 100;
 	export let project: Project;
+	export let shouldAnimate: boolean;
 
 	let isInView: boolean;
 	const options: Options = {
@@ -20,7 +21,10 @@
 
 <div use:inview={options} on:change={handleChange} class="h-72">
 	{#if isInView}
-		<div in:fly={{ x: -1000, delay, duration: 1000 }} class="relative group text-white">
+		<div
+			in:fly={{ x: -1000, delay: shouldAnimate ? delay : 0, duration: shouldAnimate ? 500 : 0 }}
+			class="relative group text-white"
+		>
 			<div class="relative flex justify-center items-center">
 				<div class="absolute top-10 text-xl font-bold z-[2] text-center">
 					<h1>{project.name}</h1>
