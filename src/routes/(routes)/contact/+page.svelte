@@ -1,10 +1,6 @@
 <script lang="ts">
 	import Header from '../../../lib/Header.svelte';
 	import Button from '../../../lib/Button.svelte';
-
-	let src = './frontendmasters_gray.png';
-	const onMouseEnter = () => (src = './frontendmasters_white.png');
-	const onMouseLeave = () => (src = './frontendmasters_gray.png');
 </script>
 
 <Header title="Kontakt" />
@@ -42,15 +38,6 @@
 					link="https://www.linkedin.com/in/michal-petrik-503b14129/"
 				/>
 				<Button icon="fab fa-github" link="https://github.com/vikingviolinist" />
-				<Button
-					on:mouseenter={onMouseEnter}
-					on:focus={onMouseEnter}
-					on:mouseleave={onMouseLeave}
-					on:focusout={onMouseLeave}
-					link="https://frontendmasters.com/u/vikingviolinist/"
-				>
-					<img {src} class="w-6" id="img" alt="Frontend Masters" />
-				</Button>
 			</div>
 		</div>
 		<div class="flex-[3]">
