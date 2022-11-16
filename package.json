@@ -22,7 +22,7 @@
 		"@sveltejs/kit": "next",
 		"@typescript-eslint/eslint-plugin": "^5.27.0",
 		"@typescript-eslint/parser": "^5.43.0",
-		"autoprefixer": "^10.4.11",
+		"autoprefixer": "^10.4.13",
 		"dotenv": "^16.0.2",
 		"eslint": "^8.27.0",
 		"eslint-config-prettier": "^8.3.0",
