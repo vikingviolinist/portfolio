@@ -22,6 +22,7 @@ export { default as Linux } from './Linux.svelte';
 export { default as Mongodb } from './Mongodb.svelte';
 export { default as Mysql } from './Mysql.svelte';
 export { default as Netlify } from './Netlify.svelte';
+export { default as Nextjs } from './Nextjs.svelte';
 export { default as Nodejs } from './Nodejs.svelte';
 export { default as Npm } from './Npm.svelte';
 export { default as Parcel } from './Parcel.svelte';
