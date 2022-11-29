@@ -2,7 +2,7 @@ name: Auto commit
 
 on:
   schedule:
-    - cron: '* * * * *'
+    - cron: '24 * * * *'
 
 jobs:
   create-pull-request:
