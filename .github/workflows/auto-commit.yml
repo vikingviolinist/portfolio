@@ -25,3 +25,4 @@ jobs:
           branch: ci/readme-auto-update
           delete-branch: true
           title: '🤖 Auto update readme'
+          milestone: 1
