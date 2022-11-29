@@ -1,0 +1,19 @@
+name: Auto commit
+
+on:
+  schedule:
+    - cron: '2 * * * *'
+
+jobs:
+  createPullRequest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Make changes to PR
+        run: echo "Last updated:"  +  date +%s >> README.md
+
+      - name: Create PR
+        uses: peter-evans/create-pull-request@v4
+        with:
+          commit-message: 🤖 Auto update readme
