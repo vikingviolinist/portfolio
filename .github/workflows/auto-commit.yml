@@ -26,15 +26,17 @@ jobs:
           delete-branch: true
           title: '🤖 Auto update readme'
 
-  auto-commit:
-    name: Auto commit to main
+  report:
+    name: Commit manually
     runs-on: ubuntu-latest
 
     steps:
-      - name: Push to main branch
-        uses: Automattic/action-commit-to-branch@master
-        with:
-          branch: 'main'
-          commit_message: '🤖 Auto update readme'
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - uses: actions/checkout@v2
+      - name: Create report file
+        run: date +%s > report.txt
+      - name: Commit report
+        run: |
+          git config --global user.name 'vikingviolinist'
+          git config --global user.email 'vikingviolinist@users.noreply.github.com'
+          git commit -am "💩 Automated report"
+          git push origin main
