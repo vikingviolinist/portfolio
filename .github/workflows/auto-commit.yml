@@ -2,7 +2,7 @@ name: Auto commit
 
 on:
   schedule:
-    - cron: '* * * * *'
+    - cron: '*/5 * * * *'
 
 jobs:
   create-pull-request:
@@ -25,3 +25,16 @@ jobs:
           branch: ci/readme-auto-update
           delete-branch: true
           title: '🤖 Auto update readme'
+
+  auto-commit:
+    name: Auto commit to main
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Push to main branch
+        uses: Automattic/action-commit-to-branch@master
+        with:
+          branch: 'main'
+          commit_message: '🤖 Auto update readme'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
