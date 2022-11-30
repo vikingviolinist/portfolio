@@ -2,7 +2,7 @@ name: Auto commit
 
 on:
   schedule:
-    - cron: '*/5 * * * *'
+    - cron: '30 23 * * *'
 
 jobs:
   no-activity-report:
