@@ -22,6 +22,6 @@ jobs:
           commit-message: 🤖 Auto update readme
           committer: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
           author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
-          branch: ci/readme-auto-update
+          branch: main
           delete-branch: true
           title: '🤖 Auto update readme'
