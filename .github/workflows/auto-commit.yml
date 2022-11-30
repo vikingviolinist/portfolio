@@ -31,7 +31,7 @@ jobs:
         with:
           query: |
             query($owner:String!) { 
-              user(login: $ownew){
+              user(login: $owner){
                 contributionsCollection {
                   contributionCalendar {
                     totalContributions
