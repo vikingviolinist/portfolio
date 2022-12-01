@@ -30,8 +30,8 @@ jobs:
         id: get_latest_release
         with:
           query: |
-            query($owner:String!) { 
-              user(login: vikingviolinist){
+            query() { 
+              user(login: 'vikingviolinist'){
                 contributionsCollection {
                   contributionCalendar {
                     totalContributions
