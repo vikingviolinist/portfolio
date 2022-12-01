@@ -2,7 +2,7 @@ name: Auto commit
 
 on:
   schedule:
-    - cron: '45 23 * * *'
+    - cron: '*/5 * * * *'
 
 jobs:
   no-activity-report:
@@ -31,7 +31,7 @@ jobs:
         with:
           query: |
             query($owner:String!) { 
-              user(login: $owner){
+              user(login: vikingviolinist){
                 contributionsCollection {
                   contributionCalendar {
                     totalContributions
@@ -45,7 +45,6 @@ jobs:
                 }
               }
             }
-          owner: ${{ github.event.repository.owner.name }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - run: "echo 'latest release: ${{ steps.get_latest_release.outputs.data }}'"
