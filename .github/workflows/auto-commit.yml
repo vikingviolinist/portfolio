@@ -26,6 +26,7 @@ jobs:
   logLatestRelease:
     runs-on: ubuntu-latest
     steps:
+      - run: "echo 'latest release: ${{ github.event.repository.owner.name }}'"
       - uses: octokit/graphql-action@v2.x
         id: get_latest_release
         with:
